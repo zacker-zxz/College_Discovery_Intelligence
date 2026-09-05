@@ -7,9 +7,48 @@ export type CollegeQueryParams = z.infer<typeof collegeQuerySchema>;
 
 export class CollegeService {
   static async getColleges(params: CollegeQueryParams) {
-    const { search, state, city, type, ownership, minFee, maxFee, minRating, minPlacement, course, sort, page, limit } = params;
+    const { search, state, city, type, ownership, ids, minFee, maxFee, minRating, minPlacement, course, sort, page, limit } = params;
 
     const skip = (page - 1) * limit;
+
+    // ── Direct ID lookup (comparison workspace) ──
+    // Returns colleges for a comma-separated list of UUIDs, preserving order.
+    if (ids && ids.trim() !== "") {
+      const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+      const idList = ids
+        .split(",")
+        .map((s) => s.trim())
+        .filter((s) => UUID_RE.test(s))
+        .slice(0, 3);
+
+      if (idList.length === 0) {
+        return {
+          colleges: [],
+          pagination: { total: 0, page: 1, limit: 1, totalPages: 0, hasMore: false },
+        };
+      }
+
+      const colleges = await prisma.college.findMany({
+        where: { id: { in: idList } },
+        include: {
+          courses: { include: { course: true } },
+        },
+      });
+
+      const order = new Map(idList.map((id, i) => [id, i]));
+      colleges.sort((a, b) => (order.get(a.id) ?? 0) - (order.get(b.id) ?? 0));
+
+      return {
+        colleges,
+        pagination: {
+          total: colleges.length,
+          page: 1,
+          limit: colleges.length,
+          totalPages: 1,
+          hasMore: false,
+        },
+      };
+    }
 
     // Build Prisma Where Clause
     // eslint-disable-next-line @typescript-eslint/no-explicit-any

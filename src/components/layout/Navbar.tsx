@@ -53,13 +53,13 @@ export const Navbar = () => {
             </div>
             <div className="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-emerald-500 rounded-full border-2 border-white" title="Live Database Active" />
           </div>
-          <div className="leading-none">
-            <span className="font-extrabold text-slate-900 text-lg tracking-tight group-hover:text-blue-600 transition-colors block">
+          <div className="shrink-0">
+            <span className="block font-extrabold text-slate-900 text-lg leading-tight tracking-tight group-hover:text-blue-600 transition-colors">
               CampusLens
             </span>
-            <span className="text-[10px] font-bold text-blue-600 block mt-0.5 tracking-wide flex items-center gap-1">
-              <ShieldCheck className="w-3 h-3 text-emerald-500 inline shrink-0" />
-              <span className="leading-normal">Intelligence</span>
+            <span className="flex items-center gap-1 mt-0.5 text-[10px] font-bold text-blue-600 tracking-wide leading-[1.4]">
+              <ShieldCheck className="w-3 h-3 text-emerald-500 shrink-0" />
+              Intelligence
             </span>
           </div>
         </Link>
@@ -74,7 +74,7 @@ export const Navbar = () => {
                 key={link.href}
                 href={link.href}
                 className={`relative flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold rounded-lg transition-all ${
-                  isActive ? "text-slate-900" : "text-slate-600 hover:text-slate-900 hover:bg-slate-200/50"
+                  isActive ? "text-slate-900" : "text-slate-600 hover:text-slate-900 hover:bg-slate-200"
                 }`}
               >
                 {isActive && (

@@ -199,7 +199,7 @@ export default function HomePage() {
                     <Link
                       key={f.label}
                       href={f.href}
-                      className="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-700 font-semibold transition-all shadow-sm"
+                      className="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 hover:bg-blue-100 hover:border-blue-400 hover:text-blue-800 font-semibold transition-all shadow-sm"
                     >
                       {f.label}
                     </Link>
@@ -293,7 +293,7 @@ export default function HomePage() {
                 return (
                   <motion.div key={tool.href} custom={i + 1} variants={fadeInUp}>
                     <Link href={tool.href} className="group block h-full">
-                      <div className="glass-card glass-card-hover rounded-2xl p-7 h-full space-y-5 border border-slate-200/80 relative overflow-hidden">
+                      <div className="glass-card glass-card-hover rounded-2xl p-7 h-full space-y-5 border border-slate-200/80 hover:border-slate-400/60 relative overflow-hidden">
                         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity" />
                         <div className={`w-14 h-14 rounded-xl ${colors.bg} ${colors.text} flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform`}>
                           <Icon className="w-7 h-7" />
@@ -389,7 +389,7 @@ export default function HomePage() {
               {featuredColleges.map((college, i) => (
                 <motion.div key={college.id} custom={i + 1} variants={fadeInUp}>
                   <Link href={`/colleges/${college.slug}`} className="group block">
-                    <div className="glass-card glass-card-hover rounded-2xl p-6 h-full space-y-4 border border-slate-200/80 relative overflow-hidden">
+                    <div className="glass-card glass-card-hover rounded-2xl p-6 h-full space-y-4 border border-slate-200/80 hover:border-slate-400/60 relative overflow-hidden">
                       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity" />
 
                       <div className="flex items-start justify-between">

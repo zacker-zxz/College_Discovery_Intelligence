@@ -6,6 +6,8 @@ export const collegeQuerySchema = z.object({
   city: z.string().optional().default(""),
   type: z.string().optional().default(""),
   ownership: z.string().optional().default(""),
+  // Comma-separated college UUIDs for direct lookup (comparison workspace)
+  ids: z.string().max(250).optional().default(""),
   minFee: z.coerce.number().optional(),
   maxFee: z.coerce.number().optional(),
   minRating: z.coerce.number().optional(),

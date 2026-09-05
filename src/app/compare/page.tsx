@@ -14,6 +14,11 @@ function CompareContent() {
   const router = useRouter();
 
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  // Details of every selected college (even a single one), so the
+  // "Selected Colleges" badges always reflect the current selection.
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [selectedColleges, setSelectedColleges] = useState<any[]>([]);
+  const [isFetchingDetails, setIsFetchingDetails] = useState<boolean>(false);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [comparisonMatrix, setComparisonMatrix] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -37,6 +42,35 @@ function CompareContent() {
       setSelectedIds(ids);
     }
   }, [searchParams]);
+
+  // Fetch display details for ALL selected colleges (including a single one),
+  // so badges render the moment a college is added — even before a second
+  // college makes the comparison matrix computable.
+  useEffect(() => {
+    if (selectedIds.length === 0) {
+      setSelectedColleges([]);
+      return;
+    }
+
+    let cancelled = false;
+    setIsFetchingDetails(true);
+
+    fetch(`/api/colleges?ids=${selectedIds.join(",")}`)
+      .then((res) => (res.ok ? res.json() : { colleges: [] }))
+      .then((data) => {
+        if (!cancelled) setSelectedColleges(data.colleges || []);
+      })
+      .catch(() => {
+        if (!cancelled) setSelectedColleges([]);
+      })
+      .finally(() => {
+        if (!cancelled) setIsFetchingDetails(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [selectedIds]);
 
   const fetchComparison = useCallback(async (ids: string[]) => {
     if (ids.length < 2) {
@@ -193,7 +227,14 @@ function CompareContent() {
 
         {/* Selected Badges Row */}
         <div className="flex items-center gap-3 flex-wrap">
-          {comparisonMatrix.map((col) => (
+          {isFetchingDetails && selectedColleges.length === 0 && (
+            <div className="flex items-center gap-2 text-xs text-slate-400 font-semibold">
+              <div className="w-3.5 h-3.5 border-2 border-slate-300 border-t-slate-600 rounded-full animate-spin" />
+              Loading selection…
+            </div>
+          )}
+
+          {selectedColleges.map((col) => (
             <div
               key={col.id}
               className="flex items-center gap-2 bg-slate-100 border border-slate-300 px-3 py-1.5 rounded-md text-xs font-semibold text-slate-900"
