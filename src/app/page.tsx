@@ -175,17 +175,15 @@ export default function HomePage() {
 
               {/* Live Search */}
               <motion.div custom={3} variants={fadeInUp} className="pt-2 max-w-2xl mx-auto">
-                <motion.div
-                  whileHover={{ y: -2 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 22 }}
-                  className="bg-white p-2 rounded-2xl shadow-elevated border border-slate-200"
-                >
+                {/* relative + z-50 pins this card (and its dropdown) above the
+                    pills row below — the dropdown can never be overlapped */}
+                <div className="relative z-50 bg-white p-2 rounded-2xl shadow-elevated border border-slate-200">
                   <SearchAutocomplete
                     size="lg"
                     inputClassName="rounded-xl"
                     placeholder={searchPlaceholder}
                   />
-                </motion.div>
+                </div>
 
                 {/* Quick Filter Pills */}
                 <div className="flex items-center justify-center gap-2 text-xs mt-5 flex-wrap">
