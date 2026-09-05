@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSessionUser } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { savedCollegeSchema } from "@/validators/schemas";
+import { rateLimit } from "@/lib/rate-limit";
 
 export async function GET() {
   const user = await getSessionUser();
@@ -32,17 +34,35 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
+  // Per-user limit: prevents bookmark-spam flooding
+  const limit = rateLimit(`save-college:${user.userId}`, { windowMs: 60 * 1000, maxRequests: 30 });
+  if (!limit.allowed) {
+    return NextResponse.json(
+      { error: "Too many requests. Please slow down." },
+      { status: 429, headers: { "Retry-After": String(limit.retryAfterSeconds) } }
+    );
+  }
+
   try {
-    const { collegeId } = await req.json();
-    if (!collegeId) {
-      return NextResponse.json({ error: "collegeId is required" }, { status: 400 });
+    const body = await req.json();
+    const validated = savedCollegeSchema.safeParse(body);
+    if (!validated.success) {
+      return NextResponse.json({ error: "Invalid request", details: validated.error.format() }, { status: 400 });
+    }
+
+    const college = await prisma.college.findUnique({
+      where: { id: validated.data.collegeId },
+      select: { id: true },
+    });
+    if (!college) {
+      return NextResponse.json({ error: "College not found" }, { status: 404 });
     }
 
     const existing = await prisma.savedCollege.findUnique({
       where: {
         userId_collegeId: {
           userId: user.userId,
-          collegeId,
+          collegeId: validated.data.collegeId,
         },
       },
     });
@@ -54,7 +74,7 @@ export async function POST(req: NextRequest) {
     const savedItem = await prisma.savedCollege.create({
       data: {
         userId: user.userId,
-        collegeId,
+        collegeId: validated.data.collegeId,
       },
       include: { college: true },
     });

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Sparkles, Award, CheckCircle2, AlertCircle, HelpCircle, Filter } from "lucide-react";
+import { Sparkles, CheckCircle2, AlertCircle, HelpCircle } from "lucide-react";
 import { PredictorForm, PredictorFormData } from "@/components/predictor/PredictorForm";
 import { PredictionCard } from "@/components/predictor/PredictionCard";
 import { PredictionMatch } from "@/services/predictor.service";

@@ -1,17 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
 import { DiscussionService } from "@/services/discussion.service";
 import { getSessionUser } from "@/lib/auth";
-import { discussionSchema } from "@/validators/schemas";
+import { discussionSchema, discussionQuerySchema } from "@/validators/schemas";
+import { rateLimit } from "@/lib/rate-limit";
 
 export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
-    const search = searchParams.get("search") || undefined;
-    const collegeId = searchParams.get("collegeId") || undefined;
-    const page = parseInt(searchParams.get("page") || "1", 10);
-    const limit = parseInt(searchParams.get("limit") || "10", 10);
+    const validated = discussionQuerySchema.safeParse(Object.fromEntries(searchParams.entries()));
+    if (!validated.success) {
+      return NextResponse.json(
+        { error: "Invalid query parameters", details: validated.error.format() },
+        { status: 400 }
+      );
+    }
 
-    const data = await DiscussionService.getDiscussions({ search, collegeId, page, limit });
+    const data = await DiscussionService.getDiscussions(validated.data);
     return NextResponse.json(data);
   } catch (error) {
     console.error("GET discussions error:", error);
@@ -24,6 +28,15 @@ export async function POST(req: NextRequest) {
     const user = await getSessionUser();
     if (!user) {
       return NextResponse.json({ error: "Authentication required to ask questions" }, { status: 401 });
+    }
+
+    // Per-user limit: prevents authenticated thread spamming
+    const limit = rateLimit(`discussion:${user.userId}`, { windowMs: 60 * 60 * 1000, maxRequests: 10 });
+    if (!limit.allowed) {
+      return NextResponse.json(
+        { error: "You are posting questions too quickly. Please try again later." },
+        { status: 429, headers: { "Retry-After": String(limit.retryAfterSeconds) } }
+      );
     }
 
     const body = await req.json();

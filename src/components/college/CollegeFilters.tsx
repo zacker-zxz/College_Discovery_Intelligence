@@ -2,7 +2,6 @@
 
 import React from "react";
 import { Search, Filter, RotateCcw } from "lucide-react";
-import { Button } from "@/components/ui/Button";
 
 export interface FilterState {
   search: string;

@@ -3,7 +3,6 @@
 import React, { useEffect, useState, useCallback, use } from "react";
 import Link from "next/link";
 import { MessageSquare, ArrowLeft, Send, Clock, User as UserIcon, Building2, CheckCircle } from "lucide-react";
-import { DiscussionService } from "@/services/discussion.service";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";

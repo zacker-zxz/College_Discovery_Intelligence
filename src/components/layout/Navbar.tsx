@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { Compass, GitCompare, Sparkles, MessageSquare, Bookmark, User as UserIcon, Menu, X, LogOut, Search, ChevronDown, ShieldCheck } from "lucide-react";
+import { Compass, GitCompare, Sparkles, MessageSquare, Bookmark, Menu, X, LogOut, Search, ChevronDown, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { SearchAutocomplete } from "@/components/search/SearchAutocomplete";
 import { motion, AnimatePresence } from "framer-motion";

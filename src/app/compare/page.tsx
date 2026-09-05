@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useCallback, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams, useRouter } from "next/navigation";
-import { GitCompare, Search, Plus, Bookmark, CheckCircle, AlertCircle } from "lucide-react";
+import { GitCompare, Search, Plus, Bookmark, AlertCircle } from "lucide-react";
 import { CollegeComparisonTable } from "@/components/college/CollegeComparisonTable";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -23,7 +23,6 @@ function CompareContent() {
   const [searchQuery, setSearchQuery] = useState("");
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [searchResults, setSearchResults] = useState<any[]>([]);
-  const [isSearching, setIsSearching] = useState(false);
 
   // Save comparison state
   const [saveName, setSaveName] = useState("");
@@ -85,7 +84,6 @@ function CompareContent() {
       return;
     }
 
-    setIsSearching(true);
     try {
       const res = await fetch(`/api/colleges?search=${encodeURIComponent(q)}&limit=5`);
       const data = await res.json();
@@ -93,9 +91,7 @@ function CompareContent() {
         setSearchResults(data.colleges || []);
       }
     } catch {
-      // error handling
-    } finally {
-      setIsSearching(false);
+      // Non-critical: dropdown simply shows no results on failure
     }
   };
 

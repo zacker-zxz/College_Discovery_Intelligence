@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSessionUser } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { savedComparisonSchema } from "@/validators/schemas";
+import { rateLimit } from "@/lib/rate-limit";
 
 export async function GET() {
   const user = await getSessionUser();
@@ -28,10 +30,21 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const { name, collegeIds } = await req.json();
-    if (!name || !Array.isArray(collegeIds) || collegeIds.length < 2) {
-      return NextResponse.json({ error: "Name and at least 2 college IDs required" }, { status: 400 });
+    const limit = rateLimit(`save-comparison:${user.userId}`, { windowMs: 60 * 1000, maxRequests: 20 });
+    if (!limit.allowed) {
+      return NextResponse.json(
+        { error: "Too many requests. Please slow down." },
+        { status: 429, headers: { "Retry-After": String(limit.retryAfterSeconds) } }
+      );
     }
+
+    const body = await req.json();
+    const validated = savedComparisonSchema.safeParse(body);
+    if (!validated.success) {
+      return NextResponse.json({ error: "Invalid comparison payload", details: validated.error.format() }, { status: 400 });
+    }
+
+    const { name, collegeIds } = validated.data;
 
     const saved = await prisma.savedComparison.create({
       data: {

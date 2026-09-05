@@ -64,3 +64,22 @@ export const reviewSchema = z.object({
   title: z.string().min(3, "Title must be at least 3 characters").max(150, "Title must be at most 150 characters"),
   comment: z.string().min(10, "Comment must be at least 10 characters").max(5000, "Comment must be at most 5000 characters"),
 });
+
+export const savedCollegeSchema = z.object({
+  collegeId: z.string().uuid("Invalid college reference"),
+});
+
+export const savedComparisonSchema = z.object({
+  name: z.string().min(1, "Name is required").max(100, "Name must be at most 100 characters"),
+  collegeIds: z
+    .array(z.string().uuid("Invalid college ID"))
+    .min(2, "A comparison needs at least 2 colleges")
+    .max(3, "You can compare up to 3 colleges at a time"),
+});
+
+export const discussionQuerySchema = z.object({
+  search: z.string().max(200, "Search query is too long").optional().default(""),
+  collegeId: z.string().uuid("Invalid college reference").optional(),
+  page: z.coerce.number().int().min(1).optional().default(1),
+  limit: z.coerce.number().int().min(1).max(50).optional().default(10),
+});

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, useCallback } from "react";
-import { MessageSquare, Plus, Search, Filter } from "lucide-react";
+import { MessageSquare, Plus, Search } from "lucide-react";
 import { DiscussionCard } from "@/components/discussion/DiscussionCard";
 import { DiscussionForm } from "@/components/discussion/DiscussionForm";
 import { Button } from "@/components/ui/Button";

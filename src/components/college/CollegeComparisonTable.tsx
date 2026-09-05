@@ -2,11 +2,10 @@
 
 import React from "react";
 import Link from "next/link";
-import { Award, MapPin, CheckCircle, ExternalLink, XCircle } from "lucide-react";
+import { MapPin, CheckCircle, ExternalLink, XCircle } from "lucide-react";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export interface ComparisonTableProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   colleges: any[];

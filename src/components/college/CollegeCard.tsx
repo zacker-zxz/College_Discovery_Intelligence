@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { MapPin, Building2, Star, Award, Bookmark, ArrowRight, Check, Sparkles } from "lucide-react";
+import { MapPin, Building2, Star, Award, Bookmark, ArrowRight, Check } from "lucide-react";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";

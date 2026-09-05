@@ -16,7 +16,12 @@ export async function POST(req: NextRequest) {
     const matrix = await ComparisonService.compareColleges(validated.data.collegeIds);
     return NextResponse.json({ comparison: matrix });
   } catch (error: unknown) {
-    const msg = error instanceof Error ? error.message : "Failed to compute comparison";
-    return NextResponse.json({ error: msg }, { status: 400 });
+    // Known service-level validation errors -> 400; anything else -> 500 (no internals leaked)
+    const msg = error instanceof Error ? error.message : "";
+    if (msg.includes("Comparison requires")) {
+      return NextResponse.json({ error: msg }, { status: 400 });
+    }
+    console.error("POST /api/comparisons error:", error);
+    return NextResponse.json({ error: "Failed to compute comparison" }, { status: 500 });
   }
 }

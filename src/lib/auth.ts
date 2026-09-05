@@ -38,7 +38,13 @@ export async function signToken(payload: JWTPayload): Promise<string> {
 export async function verifyToken(token: string): Promise<JWTPayload | null> {
   try {
     const verified = await jwtVerify(token, getSecretKey());
-    return verified.payload as unknown as JWTPayload;
+    const payload = verified.payload as unknown as JWTPayload;
+    // Defensive shape check: a valid signature alone is not enough —
+    // reject tokens whose payload is missing required identity fields.
+    if (!payload.userId || !payload.email || !payload.role) {
+      return null;
+    }
+    return payload;
   } catch {
     return null;
   }

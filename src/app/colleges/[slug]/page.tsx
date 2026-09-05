@@ -1,7 +1,7 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { MapPin, Building2, Star, Award, CheckCircle, ShieldCheck, ArrowLeft, Bookmark } from "lucide-react";
+import { MapPin, Building2, Star, Award, ShieldCheck, ArrowLeft } from "lucide-react";
 import { CollegeService } from "@/services/college.service";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";

@@ -2,12 +2,22 @@ import { NextRequest, NextResponse } from "next/server";
 import { getSessionUser } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { reviewSchema } from "@/validators/schemas";
+import { rateLimit } from "@/lib/rate-limit";
 
 export async function POST(req: NextRequest, { params }: { params: Promise<{ slug: string }> }) {
   try {
     const user = await getSessionUser();
     if (!user) {
       return NextResponse.json({ error: "Authentication required" }, { status: 401 });
+    }
+
+    // Per-user limit: prevents review spamming
+    const limit = rateLimit(`review:${user.userId}`, { windowMs: 60 * 60 * 1000, maxRequests: 10 });
+    if (!limit.allowed) {
+      return NextResponse.json(
+        { error: "You have submitted too many reviews recently. Please try again later." },
+        { status: 429, headers: { "Retry-After": String(limit.retryAfterSeconds) } }
+      );
     }
 
     const { slug } = await params;

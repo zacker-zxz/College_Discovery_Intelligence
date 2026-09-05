@@ -1,8 +1,26 @@
-# CampusLens — Production-Grade College Discovery & Decision Intelligence Platform
+# CampusLens — College Discovery & Decision Intelligence Platform
 
-CampusLens is a commercial-grade, data-driven college discovery, side-by-side comparison, admission prediction, and decision intelligence platform engineered for higher education candidates in India.
+**Live:** [https://college-intelligence.vercel.app](https://college-intelligence.vercel.app)
 
-Built with **Next.js 15 (App Router), React 19, TypeScript, TailwindCSS, PostgreSQL, and Prisma ORM**.
+CampusLens is a production-grade, data-driven platform for college discovery, side-by-side comparison, admission prediction, and decision intelligence — built for higher-education candidates in India and powered by the **complete official AISHE directory of 52,000+ institutions**.
+
+Built with **Next.js 15 (App Router) · React 19 · TypeScript · TailwindCSS · PostgreSQL (Neon) · Prisma ORM**
+
+---
+
+## Dashboard Preview
+
+| Home — Fuzzy Live Search | College Directory |
+|:---:|:---:|
+| ![Home](docs/screenshots/home-full.png) | ![Colleges](docs/screenshots/colleges.png) |
+
+| College Profile | Rank Predictor |
+|:---:|:---:|
+| ![College Detail](docs/screenshots/college-detail.png) | ![Predictor](docs/screenshots/predictor.png) |
+
+| Comparison Workspace |
+|:---:|
+| ![Compare](docs/screenshots/compare.png) |
 
 ---
 
@@ -16,199 +34,159 @@ Built with **Next.js 15 (App Router), React 19, TypeScript, TailwindCSS, Postgre
                                                         │ HTTP / JSON REST
                                  ┌──────────────────────▼───────────────────────┐
                                  │            API Layer (App Router)            │
-                                 │     (Controllers, Zod Input Validation)     │
+                                 │     (Controllers, Zod Input Validation)      │
                                  └──────────────────────┬───────────────────────┘
                                                         │ Domain Calls
                                  ┌──────────────────────▼───────────────────────┐
                                  │             Service / Business Layer         │
-                                 │   (SearchService, PredictionService, Auth)   │
+                                 │  (CollegeService, PredictorService, Fuzzy)   │
                                  └──────────────────────┬───────────────────────┘
                                                         │ Queries
                                  ┌──────────────────────▼───────────────────────┐
                                  │           Data Access Layer (Prisma)         │
                                  └──────────────────────┬───────────────────────┘
                                                         │ SQL
-                                  ┌──────────────────────▼───────────────────────┐
-                                  │             PostgreSQL (Serverless)          │
-                                  │         (Normalized Relational Data)         │
-                                  └──────────────────────────────────────────────┘
+                                  ┌────────────────────▼───────────────────────┐
+                                  │          PostgreSQL (Neon Serverless)       │
+                                  │        (51,000+ Institutions Indexed)       │
+                                  └────────────────────────────────────────────┘
 ```
 
 ---
 
 ## 🌟 Core Product Features
 
-### 1. College Discovery & Search Engine (`/colleges`)
-* **Database-Driven Filtering**: Filter by State, City, Institution Type (IIT, NIT, IIIT, State University, Private University), Ownership (Public, Private), Max Fee slider, Min Rating, Min Placement Average (LPA), and Specialization (CSE, EE, ECE, ME, AI).
-* **URL Parameter Sync**: All searches and filter states sync directly to the URL query string (e.g. `/colleges?state=Maharashtra&course=CSE&maxFee=200000&sort=placement&page=1`), enabling instant shareability and bookmarking.
-* **Server-Side Pagination**: Full offset pagination powered by Prisma database queries.
-* **Multi-Factor Sorting**: Sort by NIRF Rank, Rating high-to-low, Fees low-to-high, Fees high-to-low, and Placement Average.
+### 1. College Discovery & Fuzzy Search (`/colleges`)
+* **52,000+ Institutions**: The full AISHE national directory — every affiliated and constituent college across 36 states/UTs.
+* **Typo-Tolerant Search**: Two-tier fuzzy engine — misspell "IIT Bombay" as "iit bombey" and still find it. Works in the hero autocomplete and the directory.
+* **Database-Driven Filtering**: State, Institution Type (IIT, NIT, IIIT, Central/State/Private University, Affiliated & Constituent Colleges), Ownership, Max Fee, Min Rating, Min Placement (LPA), and Specialization.
+* **URL Parameter Sync**: Filter states sync to the URL (`/colleges?state=Maharashtra&course=CSE&sort=placement`) for shareable links.
+* **Server-Side Pagination** with relevance-ranked search results.
 
 ### 2. Side-by-Side Comparison Workspace (`/compare`)
-* **Multi-Institution Comparison**: Compare 2 to 3 colleges simultaneously in a side-by-side decision matrix matching official assignment specifications.
-* **Automated Highlights**: Highlights lowest tuition fees (*Best Value*), highest placement average (*Top Package*), top rating, and best NIRF ranking.
-* **Save Configurations**: Logged-in users can save custom comparison configurations to their account profile.
+* Compare 2–3 colleges in a decision matrix with **automated highlights**: lowest tuition (*Best Value*), highest average package (*Top Package*), top rating, best NIRF rank.
+* Logged-in users can save comparison configurations.
 
-### 3. Entrance Rank Predictor Engine (`/predictor`)
-* **Deterministic Recommendation Logic**: Takes Entrance Exam (JEE Main, JEE Advanced, NEET, GATE, MHT-CET, WBJEE), Rank, Reservation Category, and State Quota as input.
-* **Tiered Match Categorization**:
-  * **Strong Match**: Rank is safely within the opening-closing cutoff window (`rank <= closingRank * 0.90`).
-  * **Possible Match**: Rank is near historical closing boundary (`closingRank * 0.90 < rank <= closingRank * 1.15`).
-  * **Target / Reach Match**: Ambitious match requiring category fluctuations (`closingRank * 1.15 < rank <= closingRank * 1.45`).
-* **Explainable Rationale**: Every match provides clear text explaining historical admission cutoff bounds.
+### 3. Entrance Rank Predictor (`/predictor`)
+* Input exam (JEE Main/Advanced, NEET, GATE, MHT-CET, WBJEE), rank, category, and state quota.
+* **Explainable tiered matches**: Strong (within 90% of closing rank), Possible (90–115%), Reach (115–145%) — each with the historical cutoff bounds that produced the verdict.
 
-### 4. Student Discussion & Q&A Forum (`/discussions` and `/discussions/[id]`)
-* **Interactive Community Board**: Ask and answer questions regarding admissions, campus life, professor quality, and branch preferences.
-* **Official Educator Badges**: Admin and verified educator responses are highlighted with verified badges.
+### 4. Discussion & Q&A Forum (`/discussions`)
+* Community board for admissions, campus life, and branch questions with admin/educator verified badges.
 
-### 5. Authentication & Saved Items (`/login`, `/signup`, `/saved`)
-* **Cookie JWT Sessions**: Secure cookie-based JWT authentication with `bcryptjs` password hashing.
-* **Saved Colleges & Comparisons**: Save institutions to your personal profile dashboard with 1-click management.
+### 5. Accounts & Saved Items (`/login`, `/signup`, `/saved`)
+* Cookie-based JWT sessions, bcrypt password hashing, saved colleges and comparisons.
 
 ---
 
 ## 🔄 Data Ingestion & Quality Pipeline
 
-CampusLens runs two ingestion engines:
-
 ### 1. AISHE National Directory Import (`scripts/import-aishe.ts`)
-Imports the **complete official AISHE college directory** (52,000+ institutions across 36 states/UTs) from the two Excel exports:
-* Enriches curated NIRF-ranked profiles with AISHE metadata (no duplicates)
+Imports the **complete official AISHE directory** (52,000+ institutions) from the two Excel exports:
+* Enriches curated NIRF-ranked profiles instead of duplicating them
 * Auto-generates descriptions, slugs, and ownership mappings
-* Batch-inserts via `createMany` for fast bulk loads
+* Batched `createMany` with retry + resume (safe to re-run after any interruption)
 ```bash
 npm run data:aishe   # requires the two .xlsx files in scripts/data/
 ```
 
 ### 2. Curated Enrichment Pipeline (`scripts/import-data.ts`)
-Imports the hand-curated dataset (40 premier institutions with fees, placements, cutoffs, recruiters):
+Imports 40 premier institutions with fees, placements, cutoffs, and recruiter data:
 ```
  Raw Payload (JSON) ──► Parser ──► Validator ──► Normalizer ──► Deduplicator ──► Prisma Upserts
 ```
 
-### Pipeline Features:
-1. **Validation Stage**: Rejects records with missing mandatory fields or invalid values.
-2. **Deduplication Stage**: Detects and merges duplicate institutions based on normalized slugs and names.
-3. **Normalization Stage**: Standardizes state names, course codes, degree titles, and currency amounts.
-4. **Lineage Tracking**: Ingested records link to a `DataSource` table storing dataset version, source URL, and timestamp.
-5. **Execution Summary Report**: Generates stats on inserted, updated, duplicate, and rejected records.
-
-### 🔎 Fuzzy Search Engine
-All college queries (autocomplete + directory search) use a two-tier fuzzy engine (`src/lib/fuzzy-search.ts`):
-* **Tier 1 — SQL candidates**: token-based `contains` + two-character-prefix matching (makes typo tolerance possible: "bombey" → "bo" → "Bombay")
-* **Tier 2 — Fuse.js ranking**: approximate-string scoring across the candidate pool orders results by relevance
+### 🔎 Fuzzy Search Engine (`src/lib/fuzzy-search.ts`)
+* **Tier 1 — SQL candidates**: token `contains` + two-character-prefix matching (the prefix rule is what makes typo tolerance possible: "bombey" → "bo" → "Bombay")
+* **Tier 2 — Fuse.js ranking**: approximate-string scoring orders results by relevance
 
 ---
 
-## 🗄️ Relational Database Schema (Prisma)
+## 🗄️ Database Schema (Prisma)
 
-* `User`: Student & Admin accounts, password hashes, roles.
-* `DataSource`: Ingestion source metadata, versioning, data lineage.
-* `College`: Institution metrics, NIRF rank, overall rating, fee ranges, placement stats.
-* `Course`: Standardized degree programs (B.Tech, M.Tech, MBA, etc.).
-* `CollegeCourse`: Junction table linking colleges to courses with annual tuition, seats, eligibility.
-* `PlacementRecord`: Historical placement batches, avg/highest package, top recruiters list.
-* `ExamCutoff`: Entrance exam opening & closing ranks by year, category, and quota.
-* `Review`: Verified student ratings (1 to 5 stars) and comments.
-* `Discussion` & `Answer`: Forum Q&A threads, views, helpful counters.
-* `SavedCollege` & `SavedComparison`: User saved bookmarks and comparison matrices.
+`User` · `DataSource` · `College` (with AISHE fields: `aisheCode`, `district`, `website`, `management`, `universityName`) · `Course` · `CollegeCourse` · `PlacementRecord` · `ExamCutoff` · `Review` · `Discussion` · `Answer` · `SavedCollege` · `SavedComparison`
 
 ---
 
-## 📡 API Architecture & Endpoints
+## 📡 API Endpoints
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
-| `GET` | `/api/colleges` | Search, filter, and paginate colleges |
-| `GET` | `/api/colleges/:slug` | Retrieve single detailed college profile |
-| `POST` | `/api/colleges/:slug/reviews` | Submit student review & update rating |
-| `POST` | `/api/comparisons` | Compute side-by-side matrix for 2–3 colleges |
+| `GET` | `/api/colleges` | Fuzzy search, filter, and paginate colleges |
+| `GET` | `/api/colleges/suggest?q=` | Typo-tolerant autocomplete suggestions |
+| `GET` | `/api/colleges/:slug` | Detailed college profile + similar colleges |
+| `POST` | `/api/colleges/:slug/reviews` | Submit student review (auth required) |
+| `POST` | `/api/comparisons` | Compute comparison matrix for 2–3 colleges |
 | `POST` | `/api/predictor` | Run rank prediction algorithm |
-| `POST` | `/api/auth/register` | Create user account |
-| `POST` | `/api/auth/login` | Authenticate user & issue JWT cookie |
-| `POST` | `/api/auth/logout` | Clear auth session |
-| `GET` | `/api/auth/me` | Fetch authenticated user profile |
-| `GET/POST` | `/api/me/saved-colleges` | List or save colleges to profile |
-| `DELETE` | `/api/me/saved-colleges/:id` | Remove saved college |
-| `GET/POST` | `/api/me/saved-comparisons` | List or save comparison setups |
-| `GET/POST` | `/api/discussions` | List or post new discussion question |
-| `GET` | `/api/discussions/:id` | Fetch single question and answers |
-| `POST` | `/api/discussions/:id/answers` | Post answer to discussion thread |
+| `POST` | `/api/auth/register` | Create account (rate limited: 5/hour/IP) |
+| `POST` | `/api/auth/login` | Authenticate & issue JWT cookie (10/15min/IP) |
+| `POST` | `/api/auth/logout` | Clear session |
+| `GET` | `/api/auth/me` | Current user profile |
+| `GET/POST` | `/api/me/saved-colleges` | List/save bookmarks (auth required) |
+| `DELETE` | `/api/me/saved-colleges/:id` | Remove bookmark (ownership enforced) |
+| `GET/POST` | `/api/me/saved-comparisons` | List/save comparisons (auth required) |
+| `GET/POST` | `/api/discussions` | List/post forum threads |
+| `GET` | `/api/discussions/:id` | Single thread with answers |
+| `POST` | `/api/discussions/:id/answers` | Post answer (auth required) |
 
 ---
 
-## 🛠️ Quick Start & Local Setup
+## 🛠️ Local Setup
 
 ### Prerequisites
-* Node.js v18+ or v22+
-* npm
-* PostgreSQL 14+ (local Docker via included `docker-compose.yml`, or a Neon/Supabase cloud DB)
-  > SQLite is no longer supported — the app targets serverless Postgres for Vercel compatibility.
+* Node.js v18+ · npm
+* PostgreSQL 14+ — a free [Neon](https://neon.tech) cloud DB (recommended, matches production) or local Docker
 
-### 1. Installation
 ```bash
 git clone https://github.com/Zacker/College_Discovery_Intelligence.git
 cd College_Discovery_Intelligence
 npm install
-```
 
-### 2. Environment Setup
-Copy `.env.example` to `.env` and fill in values:
-```bash
 cp .env.example .env
-```
-Generate a strong `AUTH_SECRET`:
-```bash
+# Set DATABASE_URL and generate AUTH_SECRET:
 node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
-```
 
-For a local database via Docker:
-```bash
-docker compose up -d
-```
+npx prisma db push     # create schema
+npm run db:seed        # curated colleges, cutoffs, demo users
+npm run data:aishe     # optional: import the full 52k AISHE directory
 
-### 3. Sync Database Schema & Seed Data
-Run database synchronization and trigger the dataset ingestion pipeline:
-```bash
-npx prisma db push
-npm run db:seed
+npm run dev            # http://localhost:3000
 ```
-
-### 4. Launch Local Server
-```bash
-npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 🧪 Testing Suite
-
-Run Vitest unit and integration tests covering the Predictor Engine, Search Builder, and Comparison Matrix:
+## 🧪 Testing & CI
 
 ```bash
-npm run test
+npm run test    # Vitest suite (Predictor, Comparison, Search)
+npm run lint    # ESLint (0 errors, 0 warnings)
 ```
 
-> Tests require a reachable `DATABASE_URL`. On push, GitHub Actions (`.github/workflows/ci.yml`) runs the full suite against an ephemeral Postgres service container — see the CI check on your PRs.
+GitHub Actions (`.github/workflows/ci.yml`) runs schema push → seed → tests → lint → build against an ephemeral Postgres service on every push and PR.
 
 ---
 
 ## 🔐 Security Hardening
 
-* **No fallback JWT secret** — the app refuses to start without a strong (32+ char) `AUTH_SECRET`.
-* **Rate limiting** on login, registration, and demo-login endpoints (sliding-window, per-IP).
-* **Zod input validation** with strict length/UUID constraints on every API route.
-* **bcryptjs** password hashing; minimum password policy of 8 chars with letters + numbers.
-* **Security headers** (CSP, HSTS, X-Frame-Options DENY, nosniff, Referrer-Policy, Permissions-Policy) via `next.config.ts`.
-* **PII protection** — reviewer emails are never exposed by API responses.
-* **Demo credentials server-gated** — demo login buttons only appear when `ENABLE_DEMO_ACCOUNTS=true` and credentials never ship to the client bundle.
+* **Authentication**: JWT (HS256) in HTTP-only, SameSite=Lax cookies; bcrypt password hashing; 8+ char passwords with letter+number policy; defensive JWT payload shape verification.
+* **No fallback secrets**: the app refuses to boot without a 32+ character `AUTH_SECRET`.
+* **Rate limiting everywhere it matters**: login/register/demo-login per-IP; reviews, discussions, answers, and saves per-user — all sliding-window.
+* **Zod validation on every input**: strict UUID, length, and enum constraints on all API routes (including query params — no NaN/unbounded pagination).
+* **Security headers**: CSP, HSTS, X-Frame-Options DENY, nosniff, Referrer-Policy, Permissions-Policy via `next.config.ts`.
+* **PII protection**: user emails never exposed in reviews or discussion responses.
+* **XSS-safe rendering**: all user content rendered through React's escaping — zero `dangerouslySetInnerHTML` in the codebase.
+* **Demo credentials server-gated**: only active when `ENABLE_DEMO_ACCOUNTS=true`; never shipped to the client bundle.
 
 ---
 
-## 🚀 Deployment (Vercel)
+## 🚀 Deployment
 
-CampusLens is production-ready for Vercel + serverless Postgres (Neon recommended). See **[DEPLOYMENT.md](./DEPLOYMENT.md)** for the complete step-by-step guide including:
-* Required environment variables (`DATABASE_URL`, `AUTH_SECRET`, `NEXT_PUBLIC_APP_URL`, optional `ENABLE_DEMO_ACCOUNTS`)
-* Database provisioning and one-time schema push + seed instructions
-* Custom domain setup and post-deploy verification checklist
+Production runs on **Vercel + Neon Postgres** at [college-intelligence.vercel.app](https://college-intelligence.vercel.app).
+
+See **[DEPLOYMENT.md](./DEPLOYMENT.md)** for the complete guide: environment variables, database provisioning, seeding, the AISHE import, and the post-deploy verification checklist.
+
+---
+
+## 📄 License
+
+MIT

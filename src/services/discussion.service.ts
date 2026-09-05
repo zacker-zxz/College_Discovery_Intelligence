@@ -12,8 +12,8 @@ export class DiscussionService {
     if (params.search && params.search.trim() !== "") {
       const q = params.search.trim();
       where.OR = [
-        { title: { contains: q } },
-        { body: { contains: q } },
+        { title: { contains: q, mode: "insensitive" } },
+        { body: { contains: q, mode: "insensitive" } },
       ];
     }
 

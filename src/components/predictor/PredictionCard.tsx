@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { CheckCircle2, AlertCircle, HelpCircle, MapPin, ArrowRight, ExternalLink } from "lucide-react";
+import { CheckCircle2, AlertCircle, HelpCircle, MapPin, ArrowRight } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { PredictionMatch } from "@/services/predictor.service";
