@@ -18,7 +18,18 @@ import { PrismaClient } from "@prisma/client";
 import XLSX from "xlsx";
 import path from "path";
 
-const prisma = new PrismaClient();
+// Bulk imports must use Neon's DIRECT endpoint — the pooled (-pooler) endpoint
+// drops long-running bulk writes with P1017. The direct endpoint is derived by
+// stripping "-pooler." from the host.
+function toDirectUrl(url: string): string {
+  return url.replace("-pooler.", ".");
+}
+
+const prisma = new PrismaClient({
+  datasources: {
+    db: { url: toDirectUrl(process.env.DATABASE_URL ?? "") },
+  },
+});
 
 const FILES = [
   { file: "College-Affiliated College.xlsx", type: "AFFILIATED_COLLEGE", label: "Affiliated College" },
@@ -72,9 +83,11 @@ async function main() {
     },
   });
 
-  // Existing curated colleges by normalized name — enrich, don't duplicate
+  // Existing curated colleges by normalized name — enrich, don't duplicate.
+  // Only colleges WITHOUT an aisheCode are enrichment targets, so re-runs
+  // after a partial import skip the tens of thousands of already-imported rows.
   const existing = await prisma.college.findMany({
-    select: { id: true, name: true, slug: true },
+    select: { id: true, name: true, slug: true, aisheCode: true },
   });
   const existingByName = new Map(existing.map((c) => [normalizeName(c.name), c]));
   const existingSlugs = new Set(existing.map((c) => c.slug));
@@ -148,7 +161,7 @@ async function main() {
   const matchedIds = new Set<string>();
   for (const row of rows) {
     const match = existingByName.get(normalizeName(row.name));
-    if (match && !matchedIds.has(match.id)) {
+    if (match && !match.aisheCode && !matchedIds.has(match.id)) {
       matchedIds.add(match.id);
       await prisma.college.update({
         where: { id: match.id },
@@ -228,13 +241,24 @@ async function main() {
 
   console.log(`[Normalizer] ${payload.length} new colleges to insert.`);
 
-  // Pass 3: batch insert
+  // Pass 3: batch insert with per-batch retry (network hiccups / Neon restarts)
   const BATCH = 500;
   let inserted = 0;
   for (let i = 0; i < payload.length; i += BATCH) {
     const batch = payload.slice(i, i + BATCH);
-    const res = await prisma.college.createMany({ data: batch, skipDuplicates: true });
-    inserted += res.count;
+    let res: { count: number } | null = null;
+    for (let attempt = 1; attempt <= 4; attempt++) {
+      try {
+        res = await prisma.college.createMany({ data: batch, skipDuplicates: true });
+        break;
+      } catch (err) {
+        if (attempt === 4) throw err;
+        const code = (err as { code?: string }).code ?? "UNKNOWN";
+        console.warn(`[Loader] Batch at offset ${i} failed (${code}), retry ${attempt}/3 in 8s...`);
+        await new Promise((r) => setTimeout(r, 8000));
+      }
+    }
+    inserted += res?.count ?? 0;
     if ((i / BATCH) % 10 === 0) {
       console.log(`[Loader] Progress: ${Math.min(i + BATCH, payload.length)}/${payload.length} batches processed...`);
     }

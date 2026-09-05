@@ -20,7 +20,13 @@ describe("ComparisonService - Matrix Computation", () => {
   });
 
   it("should calculate comparative highlights for valid colleges", async () => {
-    const colleges = await prisma.college.findMany({ take: 2 });
+    // Select NIRF-ranked colleges so the comparison actually has metrics
+    // (fees / packages / rank) to compute highlights from.
+    const colleges = await prisma.college.findMany({
+      where: { nirfRank: { not: null } },
+      orderBy: { nirfRank: "asc" },
+      take: 2,
+    });
     if (colleges.length < 2) return;
 
     const matrix = await ComparisonService.compareColleges([colleges[0].id, colleges[1].id]);
