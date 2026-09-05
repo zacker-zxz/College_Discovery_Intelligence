@@ -1,0 +1,203 @@
+// CampusLens Database Schema
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id            String             @id @default(uuid())
+  email         String             @unique
+  name          String
+  passwordHash  String
+  role          String             @default("STUDENT") // STUDENT, ADMIN
+  createdAt     DateTime           @default(now())
+  updatedAt     DateTime           @updatedAt
+  savedColleges SavedCollege[]
+  savedCompares SavedComparison[]
+  discussions   Discussion[]
+  answers       Answer[]
+  reviews       Review[]
+}
+
+model DataSource {
+  id             String       @id @default(uuid())
+  sourceName     String       @unique
+  sourceUrl      String?
+  datasetVersion String
+  retrievedAt    DateTime     @default(now())
+  colleges       College[]
+  cutoffs        ExamCutoff[]
+}
+
+model College {
+  id                String            @id @default(uuid())
+  slug              String            @unique
+  name              String
+  shortName         String?
+  description       String
+  establishmentYear Int?
+  institutionType   String            // IIT, NIT, IIIT, CENTRAL_UNIVERSITY, STATE_UNIVERSITY, PRIVATE_UNIVERSITY, AFFILIATED_COLLEGE, CONSTITUENT_COLLEGE, AUTONOMOUS, OTHER
+  ownership         String            // PUBLIC, PRIVATE, GOVT_AIDED
+  affiliation       String?
+  accreditation     String?           // e.g. NAAC A++, NBA
+
+  // Location
+  city              String
+  state             String
+  address           String?
+  pincode           String?
+  district          String?
+
+  // AISHE directory attributes
+  aisheCode         String?           @unique
+  website           String?
+  location          String?           // Rural / Urban
+  management        String?           // e.g. Private Un-Aided, State Government
+  universityName    String?           // Parent university (for affiliated colleges)
+  universityType    String?
+
+  // Metrics
+  nirfRank          Int?
+  overallRating     Float             @default(0.0)
+  reviewCount       Int               @default(0)
+  minFee            Float?            // Lowest annual fee in INR
+  maxFee            Float?            // Highest annual fee in INR
+  avgPackage        Float?            // In LPA (Lakhs Per Annum)
+  highestPackage    Float?            // In LPA
+  medianPackage     Float?            // In LPA
+  placementRate     Float?            // Percentage e.g. 92.5
+
+  // Data lineage
+  dataSourceId      String?
+  dataSource        DataSource?       @relation(fields: [dataSourceId], references: [id])
+
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+
+  // Relations
+  courses           CollegeCourse[]
+  placements        PlacementRecord[]
+  reviews           Review[]
+  cutoffs           ExamCutoff[]
+  savedBy           SavedCollege[]
+  discussions       Discussion[]
+
+  @@index([state])
+  @@index([institutionType])
+  @@index([ownership])
+  @@index([city])
+  @@index([name])
+}
+
+model Course {
+  id            String          @id @default(uuid())
+  code          String          @unique
+  name          String          // e.g. Computer Science & Engineering
+  degree        String          // BTECH, MTECH, BARCH, BSC, MBA, OTHER
+  durationYears Int             @default(4)
+  colleges      CollegeCourse[]
+}
+
+model CollegeCourse {
+  id             String       @id @default(uuid())
+  collegeId      String
+  courseId       String
+  college        College      @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+  course         Course       @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  annualTuition  Float?
+  otherFees      Float?
+  seatsAvailable Int?
+  eligibility    String?
+  cutoffs        ExamCutoff[]
+
+  @@unique([collegeId, courseId])
+}
+
+model PlacementRecord {
+  id             String   @id @default(uuid())
+  collegeId      String
+  college        College  @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+  year           Int
+  avgPackage     Float    // LPA
+  highestPackage Float    // LPA
+  medianPackage  Float?   // LPA
+  placementRate  Float    // Percentage
+  topRecruiters  String   // JSON stringified array of company names
+}
+
+model ExamCutoff {
+  id              String         @id @default(uuid())
+  collegeId       String
+  college         College        @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+  collegeCourseId String?
+  collegeCourse   CollegeCourse? @relation(fields: [collegeCourseId], references: [id], onDelete: Cascade)
+  examName        String         // JEE_MAIN, JEE_ADVANCED, NEET, GATE, MHT_CET, WBJEE
+  year            Int
+  category        String         // GENERAL, OBC, SC, ST, EWS
+  quota           String         @default("AI") // All India (AI), Home State (HS)
+  openingRank     Int
+  closingRank     Int
+  dataSourceId    String?
+  dataSource      DataSource?    @relation(fields: [dataSourceId], references: [id])
+}
+
+model Review {
+  id        String   @id @default(uuid())
+  collegeId String
+  college   College  @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  rating    Int      // 1 to 5
+  title     String
+  comment   String
+  createdAt DateTime @default(now())
+}
+
+model Discussion {
+  id        String   @id @default(uuid())
+  title     String
+  body      String
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  collegeId String?
+  college   College? @relation(fields: [collegeId], references: [id], onDelete: SetNull)
+  views     Int      @default(0)
+  answers   Answer[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Answer {
+  id           String     @id @default(uuid())
+  discussionId String
+  discussion   Discussion @relation(fields: [discussionId], references: [id], onDelete: Cascade)
+  userId       String
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  body         String
+  helpfulCount Int        @default(0)
+  createdAt    DateTime   @default(now())
+}
+
+model SavedCollege {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  collegeId String
+  college   College  @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([userId, collegeId])
+}
+
+model SavedComparison {
+  id         String   @id @default(uuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name       String
+  collegeIds String   // JSON stringified array of college IDs
+  createdAt  DateTime @default(now())
+}

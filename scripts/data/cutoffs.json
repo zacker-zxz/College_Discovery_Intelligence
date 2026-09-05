@@ -1,0 +1,719 @@
+[
+  {
+    "collegeSlug": "iit-bombay",
+    "courseCode": "CSE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 1,
+    "closingRank": 68
+  },
+  {
+    "collegeSlug": "iit-bombay",
+    "courseCode": "EE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 105,
+    "closingRank": 450
+  },
+  {
+    "collegeSlug": "iit-bombay",
+    "courseCode": "ME",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 600,
+    "closingRank": 1750
+  },
+  {
+    "collegeSlug": "iit-delhi",
+    "courseCode": "CSE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 25,
+    "closingRank": 118
+  },
+  {
+    "collegeSlug": "iit-delhi",
+    "courseCode": "MNC",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 120,
+    "closingRank": 340
+  },
+  {
+    "collegeSlug": "iit-madras",
+    "courseCode": "CSE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 75,
+    "closingRank": 150
+  },
+  {
+    "collegeSlug": "iit-kharagpur",
+    "courseCode": "CSE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 120,
+    "closingRank": 280
+  },
+  {
+    "collegeSlug": "iit-kharagpur",
+    "courseCode": "ECE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 400,
+    "closingRank": 950
+  },
+  {
+    "collegeSlug": "iit-kanpur",
+    "courseCode": "CSE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 100,
+    "closingRank": 250
+  },
+  {
+    "collegeSlug": "iit-kanpur",
+    "courseCode": "EE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 350,
+    "closingRank": 800
+  },
+  {
+    "collegeSlug": "iit-roorkee",
+    "courseCode": "CSE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 200,
+    "closingRank": 500
+  },
+  {
+    "collegeSlug": "iit-roorkee",
+    "courseCode": "ME",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 1500,
+    "closingRank": 3500
+  },
+  {
+    "collegeSlug": "nit-trichy",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 950,
+    "closingRank": 4800
+  },
+  {
+    "collegeSlug": "nit-trichy",
+    "courseCode": "ECE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 3200,
+    "closingRank": 9200
+  },
+  {
+    "collegeSlug": "nit-surathkal",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 1200,
+    "closingRank": 5500
+  },
+  {
+    "collegeSlug": "nit-surathkal",
+    "courseCode": "ECE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 4500,
+    "closingRank": 11000
+  },
+  {
+    "collegeSlug": "nit-warangal",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 1100,
+    "closingRank": 5200
+  },
+  {
+    "collegeSlug": "nit-warangal",
+    "courseCode": "ECE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 4000,
+    "closingRank": 10500
+  },
+  {
+    "collegeSlug": "iiit-hyderabad",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 400,
+    "closingRank": 1850
+  },
+  {
+    "collegeSlug": "dtu-delhi",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 2200,
+    "closingRank": 7500
+  },
+  {
+    "collegeSlug": "nsut-delhi",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 2500,
+    "closingRank": 8200
+  },
+  {
+    "collegeSlug": "nsut-delhi",
+    "courseCode": "IT",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 5000,
+    "closingRank": 12000
+  },
+  {
+    "collegeSlug": "coep-pune",
+    "courseCode": "CSE",
+    "examName": "MHT_CET",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "HS",
+    "openingRank": 50,
+    "closingRank": 350
+  },
+  {
+    "collegeSlug": "coep-pune",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 4500,
+    "closingRank": 18500
+  },
+  {
+    "collegeSlug": "jadavpur-university",
+    "courseCode": "CSE",
+    "examName": "WBJEE",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "HS",
+    "openingRank": 1,
+    "closingRank": 85
+  },
+  {
+    "collegeSlug": "jadavpur-university",
+    "courseCode": "IT",
+    "examName": "WBJEE",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "HS",
+    "openingRank": 86,
+    "closingRank": 280
+  },
+  {
+    "collegeSlug": "vit-vellore",
+    "courseCode": "CSE",
+    "examName": "VITEEE",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 1,
+    "closingRank": 5000
+  },
+  {
+    "collegeSlug": "vit-vellore",
+    "courseCode": "ECE",
+    "examName": "VITEEE",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 5000,
+    "closingRank": 15000
+  },
+  {
+    "collegeSlug": "srm-chennai",
+    "courseCode": "CSE",
+    "examName": "SRMJEEE",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 1,
+    "closingRank": 8000
+  },
+  {
+    "collegeSlug": "thapar-patiala",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 15000,
+    "closingRank": 45000
+  },
+  {
+    "collegeSlug": "rvce-bangalore",
+    "courseCode": "CSE",
+    "examName": "COMEDK",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 200,
+    "closingRank": 2500
+  },
+  {
+    "collegeSlug": "psg-coimbatore",
+    "courseCode": "CSE",
+    "examName": "TNEA",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "HS",
+    "openingRank": 50,
+    "closingRank": 800
+  },
+  {
+    "collegeSlug": "cet-trivandrum",
+    "courseCode": "CSE",
+    "examName": "KEAM",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "HS",
+    "openingRank": 1,
+    "closingRank": 350
+  },
+  {
+    "collegeSlug": "iit-guwahati",
+    "courseCode": "CSE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 400,
+    "closingRank": 950
+  },
+  {
+    "collegeSlug": "iit-guwahati",
+    "courseCode": "ECE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 1000,
+    "closingRank": 2200
+  },
+  {
+    "collegeSlug": "iit-guwahati",
+    "courseCode": "ME",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 2500,
+    "closingRank": 5200
+  },
+  {
+    "collegeSlug": "iit-bhu",
+    "courseCode": "CSE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 600,
+    "closingRank": 1500
+  },
+  {
+    "collegeSlug": "iit-bhu",
+    "courseCode": "EE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 2000,
+    "closingRank": 4200
+  },
+  {
+    "collegeSlug": "iit-hyderabad",
+    "courseCode": "CSE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 250,
+    "closingRank": 700
+  },
+  {
+    "collegeSlug": "iit-hyderabad",
+    "courseCode": "AI",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 100,
+    "closingRank": 350
+  },
+  {
+    "collegeSlug": "iiit-bangalore",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 900,
+    "closingRank": 2800
+  },
+  {
+    "collegeSlug": "iiit-delhi",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 1500,
+    "closingRank": 4500
+  },
+  {
+    "collegeSlug": "iiit-delhi",
+    "courseCode": "ECE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 5000,
+    "closingRank": 12000
+  },
+  {
+    "collegeSlug": "nit-calicut",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 1800,
+    "closingRank": 5500
+  },
+  {
+    "collegeSlug": "nit-calicut",
+    "courseCode": "EE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 9000,
+    "closingRank": 18000
+  },
+  {
+    "collegeSlug": "nit-rourkela",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 2500,
+    "closingRank": 7000
+  },
+  {
+    "collegeSlug": "nit-rourkela",
+    "courseCode": "ME",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 20000,
+    "closingRank": 35000
+  },
+  {
+    "collegeSlug": "iiest-shibpur",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 7000,
+    "closingRank": 16000
+  },
+  {
+    "collegeSlug": "iiest-shibpur",
+    "courseCode": "ME",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 30000,
+    "closingRank": 60000
+  },
+  {
+    "collegeSlug": "jmi-new-delhi",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 3000,
+    "closingRank": 9000
+  },
+  {
+    "collegeSlug": "jmi-new-delhi",
+    "courseCode": "ECE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 12000,
+    "closingRank": 25000
+  },
+  {
+    "collegeSlug": "amu-zakir-husain",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 8000,
+    "closingRank": 20000
+  },
+  {
+    "collegeSlug": "nit-trichy",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "OBC",
+    "quota": "AI",
+    "openingRank": 2000,
+    "closingRank": 6500
+  },
+  {
+    "collegeSlug": "nit-trichy",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "SC",
+    "quota": "AI",
+    "openingRank": 3000,
+    "closingRank": 12000
+  },
+  {
+    "collegeSlug": "nit-trichy",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "ST",
+    "quota": "AI",
+    "openingRank": 8000,
+    "closingRank": 25000
+  },
+  {
+    "collegeSlug": "nit-trichy",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "EWS",
+    "quota": "AI",
+    "openingRank": 1500,
+    "closingRank": 4800
+  },
+  {
+    "collegeSlug": "iit-bombay",
+    "courseCode": "CSE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "OBC",
+    "quota": "AI",
+    "openingRank": 30,
+    "closingRank": 350
+  },
+  {
+    "collegeSlug": "iit-bombay",
+    "courseCode": "CSE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "SC",
+    "openingRank": 100,
+    "closingRank": 1200
+  },
+  {
+    "collegeSlug": "iit-bombay",
+    "courseCode": "CSE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "ST",
+    "openingRank": 300,
+    "closingRank": 2500
+  },
+  {
+    "collegeSlug": "iit-delhi",
+    "courseCode": "CSE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "OBC",
+    "quota": "AI",
+    "openingRank": 50,
+    "closingRank": 500
+  },
+  {
+    "collegeSlug": "iit-delhi",
+    "courseCode": "CSE",
+    "examName": "JEE_ADVANCED",
+    "year": 2024,
+    "category": "SC",
+    "openingRank": 200,
+    "closingRank": 1800
+  },
+  {
+    "collegeSlug": "nit-surathkal",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "OBC",
+    "quota": "AI",
+    "openingRank": 1200,
+    "closingRank": 4000
+  },
+  {
+    "collegeSlug": "nit-warangal",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "OBC",
+    "quota": "AI",
+    "openingRank": 1500,
+    "closingRank": 4500
+  },
+  {
+    "collegeSlug": "dtu-delhi",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "OBC",
+    "quota": "HS",
+    "openingRank": 5000,
+    "closingRank": 14000
+  },
+  {
+    "collegeSlug": "nsut-delhi",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "OBC",
+    "quota": "HS",
+    "openingRank": 7000,
+    "closingRank": 18000
+  },
+  {
+    "collegeSlug": "iiit-hyderabad",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "OBC",
+    "quota": "AI",
+    "openingRank": 800,
+    "closingRank": 2200
+  },
+  {
+    "collegeSlug": "coep-pune",
+    "courseCode": "CSE",
+    "examName": "MHT_CET",
+    "year": 2024,
+    "category": "OBC",
+    "quota": "HS",
+    "openingRank": 500,
+    "closingRank": 1500
+  },
+  {
+    "collegeSlug": "manipal-institute-of-technology",
+    "courseCode": "CSE",
+    "examName": "MET",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 1,
+    "closingRank": 8500
+  },
+  {
+    "collegeSlug": "rvce-bangalore",
+    "courseCode": "ECE",
+    "examName": "COMEDK",
+    "year": 2024,
+    "category": "GENERAL",
+    "quota": "AI",
+    "openingRank": 300,
+    "closingRank": 1800
+  },
+  {
+    "collegeSlug": "nit-calicut",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "OBC",
+    "quota": "AI",
+    "openingRank": 3000,
+    "closingRank": 9000
+  },
+  {
+    "collegeSlug": "iiit-delhi",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "OBC",
+    "quota": "AI",
+    "openingRank": 3000,
+    "closingRank": 8500
+  },
+  {
+    "collegeSlug": "jmi-new-delhi",
+    "courseCode": "CSE",
+    "examName": "JEE_MAIN",
+    "year": 2024,
+    "category": "OBC",
+    "quota": "AI",
+    "openingRank": 5000,
+    "closingRank": 15000
+  }
+]

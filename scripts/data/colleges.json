@@ -1,0 +1,2619 @@
+[
+  {
+    "slug": "iit-bombay",
+    "name": "Indian Institute of Technology Bombay",
+    "shortName": "IIT Bombay",
+    "description": "Indian Institute of Technology Bombay is a premier autonomous public technical and research university located in Powai, Mumbai. Established in 1958, IIT Bombay is internationally recognized as a leader in engineering education and research.",
+    "establishmentYear": 1958,
+    "institutionType": "IIT",
+    "ownership": "PUBLIC",
+    "affiliation": "Autonomous (Institute of National Importance)",
+    "accreditation": "NIRF #3 overall / #1 Innovation",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "address": "Main Gate Rd, IIT Area, Powai, Mumbai, Maharashtra 400076",
+    "pincode": "400076",
+    "nirfRank": 3,
+    "overallRating": 4.9,
+    "reviewCount": 420,
+    "minFee": 220000,
+    "maxFee": 250000,
+    "avgPackage": 23.5,
+    "highestPackage": 120,
+    "medianPackage": 18.8,
+    "placementRate": 96.5,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 220000,
+        "otherFees": 18000,
+        "seatsAvailable": 145,
+        "eligibility": "Passed 10+2 with Physics, Chemistry, Math & qualified JEE Advanced"
+      },
+      {
+        "code": "EE",
+        "name": "Electrical Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 220000,
+        "otherFees": 18000,
+        "seatsAvailable": 120,
+        "eligibility": "Passed 10+2 with Physics, Chemistry, Math & qualified JEE Advanced"
+      },
+      {
+        "code": "ME",
+        "name": "Mechanical Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 220000,
+        "otherFees": 18000,
+        "seatsAvailable": 150,
+        "eligibility": "Passed 10+2 with Physics, Chemistry, Math & qualified JEE Advanced"
+      },
+      {
+        "code": "AI",
+        "name": "Artificial Intelligence & Data Science",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 240000,
+        "otherFees": 18000,
+        "seatsAvailable": 40,
+        "eligibility": "Passed 10+2 with Physics, Chemistry, Math & qualified JEE Advanced"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 23.5,
+        "highestPackage": 120,
+        "medianPackage": 18.8,
+        "placementRate": 96.5,
+        "topRecruiters": [
+          "Google",
+          "Microsoft",
+          "Apple",
+          "Texas Instruments",
+          "Qualcomm",
+          "Goldman Sachs",
+          "McKinsey & Company"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "iit-delhi",
+    "name": "Indian Institute of Technology Delhi",
+    "shortName": "IIT Delhi",
+    "description": "Located in Hauz Khas, New Delhi, IIT Delhi is one of the Institutes of National Importance created as a centre of excellence for training, research and development in science, engineering and technology in India.",
+    "establishmentYear": 1961,
+    "institutionType": "IIT",
+    "ownership": "PUBLIC",
+    "affiliation": "Autonomous (Institute of National Importance)",
+    "accreditation": "NIRF #2 Engineering",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "address": "Hauz Khas, New Delhi, Delhi 110016",
+    "pincode": "110016",
+    "nirfRank": 2,
+    "overallRating": 4.9,
+    "reviewCount": 385,
+    "minFee": 225000,
+    "maxFee": 255000,
+    "avgPackage": 24.2,
+    "highestPackage": 150,
+    "medianPackage": 19.5,
+    "placementRate": 97.2,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 225000,
+        "otherFees": 20000,
+        "seatsAvailable": 115,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      },
+      {
+        "code": "MNC",
+        "name": "Mathematics & Computing",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 225000,
+        "otherFees": 20000,
+        "seatsAvailable": 60,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 225000,
+        "otherFees": 20000,
+        "seatsAvailable": 90,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 24.2,
+        "highestPackage": 150,
+        "medianPackage": 19.5,
+        "placementRate": 97.2,
+        "topRecruiters": [
+          "Microsoft",
+          "Google",
+          "Tower Research",
+          "Jane Street",
+          "NVIDIA",
+          "BCG",
+          "Uber"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "iit-madras",
+    "name": "Indian Institute of Technology Madras",
+    "shortName": "IIT Madras",
+    "description": "Ranked #1 engineering institute in India by NIRF for multiple consecutive years, IIT Madras is renowned for its lush green 250-hectare campus and cutting-edge research parks.",
+    "establishmentYear": 1959,
+    "institutionType": "IIT",
+    "ownership": "PUBLIC",
+    "affiliation": "Autonomous (Institute of National Importance)",
+    "accreditation": "NIRF #1 Engineering",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "address": "IIT P.O., Chennai, Tamil Nadu 600036",
+    "pincode": "600036",
+    "nirfRank": 1,
+    "overallRating": 4.9,
+    "reviewCount": 450,
+    "minFee": 210000,
+    "maxFee": 240000,
+    "avgPackage": 22.8,
+    "highestPackage": 130,
+    "medianPackage": 18,
+    "placementRate": 95.8,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 210000,
+        "otherFees": 19000,
+        "seatsAvailable": 85,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      },
+      {
+        "code": "AERO",
+        "name": "Aerospace Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 210000,
+        "otherFees": 19000,
+        "seatsAvailable": 50,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 22.8,
+        "highestPackage": 130,
+        "medianPackage": 18,
+        "placementRate": 95.8,
+        "topRecruiters": [
+          "Intel",
+          "Qualcomm",
+          "Texas Instruments",
+          "Amazon",
+          "Citigroup",
+          "Samsung Research"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "iit-kharagpur",
+    "name": "Indian Institute of Technology Kharagpur",
+    "shortName": "IIT Kharagpur",
+    "description": "Established in 1951, IIT Kharagpur is the oldest IIT and houses the largest campus among all IITs spanning 2,100 acres. Known for its diverse engineering and science programs.",
+    "establishmentYear": 1951,
+    "institutionType": "IIT",
+    "ownership": "PUBLIC",
+    "affiliation": "Autonomous (Institute of National Importance)",
+    "accreditation": "NIRF #4 Engineering",
+    "city": "Kharagpur",
+    "state": "West Bengal",
+    "address": "Kharagpur, West Bengal 721302",
+    "pincode": "721302",
+    "nirfRank": 4,
+    "overallRating": 4.8,
+    "reviewCount": 380,
+    "minFee": 218000,
+    "maxFee": 248000,
+    "avgPackage": 21.5,
+    "highestPackage": 110,
+    "medianPackage": 17.2,
+    "placementRate": 95,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 218000,
+        "otherFees": 18000,
+        "seatsAvailable": 80,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 218000,
+        "otherFees": 18000,
+        "seatsAvailable": 90,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      },
+      {
+        "code": "ME",
+        "name": "Mechanical Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 218000,
+        "otherFees": 18000,
+        "seatsAvailable": 120,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 21.5,
+        "highestPackage": 110,
+        "medianPackage": 17.2,
+        "placementRate": 95,
+        "topRecruiters": [
+          "Google",
+          "Microsoft",
+          "Goldman Sachs",
+          "Schlumberger",
+          "Amazon",
+          "ISRO",
+          "Samsung"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "iit-kanpur",
+    "name": "Indian Institute of Technology Kanpur",
+    "shortName": "IIT Kanpur",
+    "description": "IIT Kanpur is renowned for pioneering computer science education in India and maintains world-class research facilities in aerospace, materials science, and mathematics.",
+    "establishmentYear": 1959,
+    "institutionType": "IIT",
+    "ownership": "PUBLIC",
+    "affiliation": "Autonomous (Institute of National Importance)",
+    "accreditation": "NIRF #4 Engineering",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "address": "Kalyanpur, Kanpur, Uttar Pradesh 208016",
+    "pincode": "208016",
+    "nirfRank": 5,
+    "overallRating": 4.8,
+    "reviewCount": 360,
+    "minFee": 220000,
+    "maxFee": 250000,
+    "avgPackage": 22,
+    "highestPackage": 140,
+    "medianPackage": 17.8,
+    "placementRate": 94.5,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 220000,
+        "otherFees": 18000,
+        "seatsAvailable": 90,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      },
+      {
+        "code": "EE",
+        "name": "Electrical Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 220000,
+        "otherFees": 18000,
+        "seatsAvailable": 100,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 22,
+        "highestPackage": 140,
+        "medianPackage": 17.8,
+        "placementRate": 94.5,
+        "topRecruiters": [
+          "Google",
+          "Microsoft",
+          "Samsung",
+          "DRDO",
+          "Qualcomm",
+          "DE Shaw",
+          "Tower Research"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "iit-roorkee",
+    "name": "Indian Institute of Technology Roorkee",
+    "shortName": "IIT Roorkee",
+    "description": "Originally established in 1847 as the Roorkee College, IIT Roorkee is among the oldest technical institutions in Asia. Converted to an IIT in 2001, it excels in civil, mechanical, and computer engineering.",
+    "establishmentYear": 1847,
+    "institutionType": "IIT",
+    "ownership": "PUBLIC",
+    "affiliation": "Autonomous (Institute of National Importance)",
+    "accreditation": "NIRF #6 Engineering",
+    "city": "Roorkee",
+    "state": "Uttarakhand",
+    "address": "Roorkee, Uttarakhand 247667",
+    "pincode": "247667",
+    "nirfRank": 6,
+    "overallRating": 4.7,
+    "reviewCount": 340,
+    "minFee": 215000,
+    "maxFee": 245000,
+    "avgPackage": 20.5,
+    "highestPackage": 95,
+    "medianPackage": 16.5,
+    "placementRate": 93,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 215000,
+        "otherFees": 18000,
+        "seatsAvailable": 85,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      },
+      {
+        "code": "CE",
+        "name": "Civil Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 215000,
+        "otherFees": 18000,
+        "seatsAvailable": 100,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      },
+      {
+        "code": "ME",
+        "name": "Mechanical Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 215000,
+        "otherFees": 18000,
+        "seatsAvailable": 110,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 20.5,
+        "highestPackage": 95,
+        "medianPackage": 16.5,
+        "placementRate": 93,
+        "topRecruiters": [
+          "Microsoft",
+          "Amazon",
+          "Uber",
+          "Adobe",
+          "Intel",
+          "L&T",
+          "Schlumberger"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "bits-pilani",
+    "name": "Birla Institute of Technology and Science Pilani",
+    "shortName": "BITS Pilani",
+    "description": "BITS Pilani is an Institute of Eminence offering top-tier undergraduate engineering and science programs with zero state quota and a world-class practice school industry internship system.",
+    "establishmentYear": 1964,
+    "institutionType": "PRIVATE_UNIVERSITY",
+    "ownership": "PRIVATE",
+    "affiliation": "Deemed University (Institute of Eminence)",
+    "accreditation": "NAAC A++",
+    "city": "Pilani",
+    "state": "Rajasthan",
+    "address": "Vidya Vihar Campus, Pilani, Rajasthan 333031",
+    "pincode": "333031",
+    "nirfRank": 25,
+    "overallRating": 4.8,
+    "reviewCount": 310,
+    "minFee": 530000,
+    "maxFee": 580000,
+    "avgPackage": 20.8,
+    "highestPackage": 60,
+    "medianPackage": 17,
+    "placementRate": 94,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 530000,
+        "otherFees": 45000,
+        "seatsAvailable": 120,
+        "eligibility": "10+2 with PCM 75% aggregate & qualified BITSAT"
+      },
+      {
+        "code": "EEE",
+        "name": "Electrical & Electronics Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 530000,
+        "otherFees": 45000,
+        "seatsAvailable": 140,
+        "eligibility": "10+2 with PCM 75% aggregate & qualified BITSAT"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 20.8,
+        "highestPackage": 60,
+        "medianPackage": 17,
+        "placementRate": 94,
+        "topRecruiters": [
+          "Google",
+          "Microsoft",
+          "DE Shaw",
+          "Atlassian",
+          "NVIDIA",
+          "Oracle",
+          "Walmart Labs"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "nit-trichy",
+    "name": "National Institute of Technology Tiruchirappalli",
+    "shortName": "NIT Trichy",
+    "description": "NIT Tiruchirappalli is the top-ranked National Institute of Technology in India, consistently standing alongside older IITs in terms of placement record, infrastructure, and faculty excellence.",
+    "establishmentYear": 1964,
+    "institutionType": "NIT",
+    "ownership": "PUBLIC",
+    "affiliation": "Autonomous (Institute of National Importance)",
+    "accreditation": "NIRF #9 Engineering",
+    "city": "Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "address": "Tanjore Main Road, National Highway 67, Tiruchirappalli, Tamil Nadu 620015",
+    "pincode": "620015",
+    "nirfRank": 9,
+    "overallRating": 4.7,
+    "reviewCount": 290,
+    "minFee": 150000,
+    "maxFee": 180000,
+    "avgPackage": 17.8,
+    "highestPackage": 52,
+    "medianPackage": 14.5,
+    "placementRate": 93.4,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 150000,
+        "otherFees": 25000,
+        "seatsAvailable": 110,
+        "eligibility": "10+2 with PCM + qualified JEE Main"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 150000,
+        "otherFees": 25000,
+        "seatsAvailable": 110,
+        "eligibility": "10+2 with PCM + qualified JEE Main"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 17.8,
+        "highestPackage": 52,
+        "medianPackage": 14.5,
+        "placementRate": 93.4,
+        "topRecruiters": [
+          "Amazon",
+          "Microsoft",
+          "PayPal",
+          "Texas Instruments",
+          "Qualcomm",
+          "L&T",
+          "Siemens"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "nit-surathkal",
+    "name": "National Institute of Technology Karnataka Surathkal",
+    "shortName": "NIT Surathkal",
+    "description": "NIT Karnataka (NITK) Surathkal is one of the premier NITs in India, located along the Mangalore coast. Known for its strong alumni network, competitive admissions, and excellent CSE/IT placement record.",
+    "establishmentYear": 1960,
+    "institutionType": "NIT",
+    "ownership": "PUBLIC",
+    "affiliation": "Autonomous (Institute of National Importance)",
+    "accreditation": "NIRF #12 Engineering",
+    "city": "Surathkal",
+    "state": "Karnataka",
+    "address": "NH 66, Srinivasnagar, Surathkal, Mangalore, Karnataka 575025",
+    "pincode": "575025",
+    "nirfRank": 12,
+    "overallRating": 4.7,
+    "reviewCount": 260,
+    "minFee": 155000,
+    "maxFee": 185000,
+    "avgPackage": 16.8,
+    "highestPackage": 65,
+    "medianPackage": 13.5,
+    "placementRate": 92,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 155000,
+        "otherFees": 22000,
+        "seatsAvailable": 100,
+        "eligibility": "10+2 with PCM + qualified JEE Main"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 155000,
+        "otherFees": 22000,
+        "seatsAvailable": 90,
+        "eligibility": "10+2 with PCM + qualified JEE Main"
+      },
+      {
+        "code": "IT",
+        "name": "Information Technology",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 155000,
+        "otherFees": 22000,
+        "seatsAvailable": 80,
+        "eligibility": "10+2 with PCM + qualified JEE Main"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 16.8,
+        "highestPackage": 65,
+        "medianPackage": 13.5,
+        "placementRate": 92,
+        "topRecruiters": [
+          "Google",
+          "Microsoft",
+          "Oracle",
+          "Cisco",
+          "Samsung",
+          "Infosys",
+          "TCS Digital"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "nit-warangal",
+    "name": "National Institute of Technology Warangal",
+    "shortName": "NIT Warangal",
+    "description": "NIT Warangal is one of the first NITs established in India (1959) and is consistently ranked among the top 3 NITs. Its CSE department has produced numerous startup founders and tech leaders.",
+    "establishmentYear": 1959,
+    "institutionType": "NIT",
+    "ownership": "PUBLIC",
+    "affiliation": "Autonomous (Institute of National Importance)",
+    "accreditation": "NIRF #11 Engineering",
+    "city": "Warangal",
+    "state": "Telangana",
+    "address": "Fathima Nagar, Kazipet, Warangal, Telangana 506004",
+    "pincode": "506004",
+    "nirfRank": 11,
+    "overallRating": 4.7,
+    "reviewCount": 275,
+    "minFee": 148000,
+    "maxFee": 178000,
+    "avgPackage": 16.2,
+    "highestPackage": 58,
+    "medianPackage": 13,
+    "placementRate": 91.5,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 148000,
+        "otherFees": 24000,
+        "seatsAvailable": 120,
+        "eligibility": "10+2 with PCM + qualified JEE Main"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 148000,
+        "otherFees": 24000,
+        "seatsAvailable": 100,
+        "eligibility": "10+2 with PCM + qualified JEE Main"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 16.2,
+        "highestPackage": 58,
+        "medianPackage": 13,
+        "placementRate": 91.5,
+        "topRecruiters": [
+          "Amazon",
+          "Microsoft",
+          "Flipkart",
+          "Qualcomm",
+          "Deloitte",
+          "Siemens",
+          "Wipro"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "iiit-hyderabad",
+    "name": "International Institute of Information Technology Hyderabad",
+    "shortName": "IIIT Hyderabad",
+    "description": "IIIT Hyderabad is an autonomous research university famed for its coding culture, research output in Computer Vision, Natural Language Processing, and exceptional CS placements rivaling top IITs.",
+    "establishmentYear": 1998,
+    "institutionType": "IIIT",
+    "ownership": "PRIVATE",
+    "affiliation": "Autonomous / Not-for-profit Public Private Partnership",
+    "accreditation": "NAAC A++ / NIRF Top 55",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "address": "Gachibowli, Hyderabad, Telangana 500032",
+    "pincode": "500032",
+    "nirfRank": 55,
+    "overallRating": 4.9,
+    "reviewCount": 210,
+    "minFee": 400000,
+    "maxFee": 450000,
+    "avgPackage": 30.2,
+    "highestPackage": 102,
+    "medianPackage": 27.5,
+    "placementRate": 99,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 400000,
+        "otherFees": 35000,
+        "seatsAvailable": 150,
+        "eligibility": "10+2 with PCM + qualified JEE Main / UGEE"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 400000,
+        "otherFees": 35000,
+        "seatsAvailable": 90,
+        "eligibility": "10+2 with PCM + qualified JEE Main / UGEE"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 30.2,
+        "highestPackage": 102,
+        "medianPackage": 27.5,
+        "placementRate": 99,
+        "topRecruiters": [
+          "Google",
+          "Meta",
+          "Bloomberg",
+          "Uber",
+          "Apple",
+          "Adobe",
+          "Goldman Sachs"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "dtu-delhi",
+    "name": "Delhi Technological University",
+    "shortName": "DTU",
+    "description": "Formerly known as Delhi College of Engineering (DCE), DTU is one of India's oldest and premier engineering universities with an expansive campus in Rohini, Delhi.",
+    "establishmentYear": 1941,
+    "institutionType": "STATE_UNIVERSITY",
+    "ownership": "PUBLIC",
+    "affiliation": "State University (Delhi State)",
+    "accreditation": "NAAC A+",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "address": "Bawana Rd, Shahbad Daulatpur, Village, Rohini, New Delhi, Delhi 110042",
+    "pincode": "110042",
+    "nirfRank": 29,
+    "overallRating": 4.6,
+    "reviewCount": 510,
+    "minFee": 219000,
+    "maxFee": 230000,
+    "avgPackage": 15.4,
+    "highestPackage": 82,
+    "medianPackage": 13,
+    "placementRate": 89.5,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 219000,
+        "otherFees": 15000,
+        "seatsAvailable": 480,
+        "eligibility": "10+2 PCM + qualified JEE Main (JAC Delhi counseling)"
+      },
+      {
+        "code": "IT",
+        "name": "Information Technology",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 219000,
+        "otherFees": 15000,
+        "seatsAvailable": 240,
+        "eligibility": "10+2 PCM + qualified JEE Main (JAC Delhi counseling)"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 15.4,
+        "highestPackage": 82,
+        "medianPackage": 13,
+        "placementRate": 89.5,
+        "topRecruiters": [
+          "Microsoft",
+          "Amazon",
+          "Sprinklr",
+          "Samsung R&D",
+          "Deloitte",
+          "Paytm",
+          "Maruti Suzuki"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "nsut-delhi",
+    "name": "Netaji Subhas University of Technology",
+    "shortName": "NSUT Delhi",
+    "description": "Formerly NSIT, NSUT is a premier state university in Dwarka, Delhi, known for its CS and IT programs. It consistently produces top tech placements through JAC Delhi counseling.",
+    "establishmentYear": 1983,
+    "institutionType": "STATE_UNIVERSITY",
+    "ownership": "PUBLIC",
+    "affiliation": "State University (Delhi State)",
+    "accreditation": "NAAC A+",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "address": "Azad Hind Fauj Marg, Sector 3, Dwarka, New Delhi, Delhi 110078",
+    "pincode": "110078",
+    "nirfRank": 38,
+    "overallRating": 4.5,
+    "reviewCount": 320,
+    "minFee": 210000,
+    "maxFee": 225000,
+    "avgPackage": 14.8,
+    "highestPackage": 75,
+    "medianPackage": 12.5,
+    "placementRate": 88,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 210000,
+        "otherFees": 15000,
+        "seatsAvailable": 240,
+        "eligibility": "10+2 PCM + qualified JEE Main (JAC Delhi counseling)"
+      },
+      {
+        "code": "IT",
+        "name": "Information Technology",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 210000,
+        "otherFees": 15000,
+        "seatsAvailable": 180,
+        "eligibility": "10+2 PCM + qualified JEE Main (JAC Delhi counseling)"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 210000,
+        "otherFees": 15000,
+        "seatsAvailable": 150,
+        "eligibility": "10+2 PCM + qualified JEE Main (JAC Delhi counseling)"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 14.8,
+        "highestPackage": 75,
+        "medianPackage": 12.5,
+        "placementRate": 88,
+        "topRecruiters": [
+          "Microsoft",
+          "Amazon",
+          "Flipkart",
+          "Samsung R&D",
+          "PayPal",
+          "Zomato",
+          "Paytm"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coep-pune",
+    "name": "COEP Technological University Pune",
+    "shortName": "COEP Pune",
+    "description": "Established in 1854, COEP Pune is the third oldest engineering college in Asia. Located in Shivaji Nagar, Pune, it is legendary for its academic heritage and industry connections across Maharashtra.",
+    "establishmentYear": 1854,
+    "institutionType": "STATE_UNIVERSITY",
+    "ownership": "PUBLIC",
+    "affiliation": "Unitary Public University (Govt. of Maharashtra)",
+    "accreditation": "NAAC A+ / NBA accredited",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "address": "Wellesley Rd, Shivajinagar, Pune, Maharashtra 411005",
+    "pincode": "411005",
+    "nirfRank": 73,
+    "overallRating": 4.6,
+    "reviewCount": 340,
+    "minFee": 140000,
+    "maxFee": 160000,
+    "avgPackage": 11.5,
+    "highestPackage": 50.5,
+    "medianPackage": 9.5,
+    "placementRate": 88,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 140000,
+        "otherFees": 18000,
+        "seatsAvailable": 120,
+        "eligibility": "10+2 PCM + qualified MHT-CET / JEE Main"
+      },
+      {
+        "code": "ENTC",
+        "name": "Electronics & Telecommunication",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 140000,
+        "otherFees": 18000,
+        "seatsAvailable": 120,
+        "eligibility": "10+2 PCM + qualified MHT-CET / JEE Main"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 11.5,
+        "highestPackage": 50.5,
+        "medianPackage": 9.5,
+        "placementRate": 88,
+        "topRecruiters": [
+          "Bajaj Auto",
+          "Mastercard",
+          "TATA Motors",
+          "Barclays",
+          "BNY Mellon",
+          "Nvidia",
+          "TCS Digital"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "jadavpur-university",
+    "name": "Jadavpur University Faculty of Engineering",
+    "shortName": "Jadavpur University",
+    "description": "Jadavpur University in Kolkata is famed for delivering world-class engineering education at nominal tuition fees (approx. ₹10,000 for 4 years) with remarkable placement ROI.",
+    "establishmentYear": 1955,
+    "institutionType": "STATE_UNIVERSITY",
+    "ownership": "PUBLIC",
+    "affiliation": "State Public University (West Bengal)",
+    "accreditation": "NIRF #10 Overall / NAAC A+",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "address": "188, Raja S.C. Mallick Rd, Jadavpur, Kolkata, West Bengal 700032",
+    "pincode": "700032",
+    "nirfRank": 10,
+    "overallRating": 4.8,
+    "reviewCount": 390,
+    "minFee": 2400,
+    "maxFee": 3000,
+    "avgPackage": 14.8,
+    "highestPackage": 85,
+    "medianPackage": 12,
+    "placementRate": 92,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 2400,
+        "otherFees": 600,
+        "seatsAvailable": 65,
+        "eligibility": "10+2 PCM + qualified WBJEE"
+      },
+      {
+        "code": "IT",
+        "name": "Information Technology",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 2400,
+        "otherFees": 600,
+        "seatsAvailable": 60,
+        "eligibility": "10+2 PCM + qualified WBJEE"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 14.8,
+        "highestPackage": 85,
+        "medianPackage": 12,
+        "placementRate": 92,
+        "topRecruiters": [
+          "Google",
+          "Amazon",
+          "PwC",
+          "Texas Instruments",
+          "Schlumberger",
+          "CESC",
+          "L&T"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "manipal-institute-of-technology",
+    "name": "Manipal Institute of Technology",
+    "shortName": "MIT Manipal",
+    "description": "MIT Manipal is a leading constituent institution of MAHE, boasting a vibrant international campus, modern innovation labs, and widespread global alumni connections.",
+    "establishmentYear": 1957,
+    "institutionType": "PRIVATE_UNIVERSITY",
+    "ownership": "PRIVATE",
+    "affiliation": "Deemed to be University (MAHE)",
+    "accreditation": "NAAC A++",
+    "city": "Manipal",
+    "state": "Karnataka",
+    "address": "Eshwar Nagar, Manipal, Karnataka 576104",
+    "pincode": "576104",
+    "nirfRank": 61,
+    "overallRating": 4.5,
+    "reviewCount": 410,
+    "minFee": 480000,
+    "maxFee": 520000,
+    "avgPackage": 10.5,
+    "highestPackage": 54,
+    "medianPackage": 8.5,
+    "placementRate": 86.5,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 480000,
+        "otherFees": 35000,
+        "seatsAvailable": 230,
+        "eligibility": "10+2 PCM + MET entrance examination"
+      },
+      {
+        "code": "AI_ML",
+        "name": "Computer Science (AI & Machine Learning)",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 500000,
+        "otherFees": 35000,
+        "seatsAvailable": 120,
+        "eligibility": "10+2 PCM + MET entrance examination"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 10.5,
+        "highestPackage": 54,
+        "medianPackage": 8.5,
+        "placementRate": 86.5,
+        "topRecruiters": [
+          "Microsoft",
+          "Amazon",
+          "Deloitte",
+          "Philips",
+          "Capgemini",
+          "Schneider Electric"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vit-vellore",
+    "name": "Vellore Institute of Technology",
+    "shortName": "VIT Vellore",
+    "description": "VIT Vellore is one of India's largest private engineering universities with 30,000+ students. Known for its industry-focused curriculum, VITEEE entrance, and strong placement cell placing 10,000+ students annually.",
+    "establishmentYear": 1984,
+    "institutionType": "PRIVATE_UNIVERSITY",
+    "ownership": "PRIVATE",
+    "affiliation": "Deemed University (Institute of Eminence)",
+    "accreditation": "NAAC A++ / NIRF #11",
+    "city": "Vellore",
+    "state": "Tamil Nadu",
+    "address": "Vellore-Katpadi Rd, Tiruvalam, Vellore, Tamil Nadu 632014",
+    "pincode": "632014",
+    "nirfRank": 11,
+    "overallRating": 4.5,
+    "reviewCount": 620,
+    "minFee": 350000,
+    "maxFee": 400000,
+    "avgPackage": 10.2,
+    "highestPackage": 58,
+    "medianPackage": 7.8,
+    "placementRate": 90.5,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 350000,
+        "otherFees": 32000,
+        "seatsAvailable": 600,
+        "eligibility": "10+2 PCM 60% + qualified VITEEE"
+      },
+      {
+        "code": "AI",
+        "name": "Artificial Intelligence & Data Science",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 370000,
+        "otherFees": 32000,
+        "seatsAvailable": 200,
+        "eligibility": "10+2 PCM 60% + qualified VITEEE"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 350000,
+        "otherFees": 32000,
+        "seatsAvailable": 300,
+        "eligibility": "10+2 PCM 60% + qualified VITEEE"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 10.2,
+        "highestPackage": 58,
+        "medianPackage": 7.8,
+        "placementRate": 90.5,
+        "topRecruiters": [
+          "Amazon",
+          "Microsoft",
+          "Cognizant",
+          "Zoho",
+          "TCS",
+          "Infosys",
+          "Wipro",
+          "Deloitte"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "srm-chennai",
+    "name": "SRM Institute of Science and Technology",
+    "shortName": "SRM Chennai",
+    "description": "SRM IST is a top private deemed university in Kattankulathur near Chennai. It offers a wide range of engineering and science programs with its own SRMJEEE entrance exam and a massive placement cell.",
+    "establishmentYear": 1985,
+    "institutionType": "PRIVATE_UNIVERSITY",
+    "ownership": "PRIVATE",
+    "affiliation": "Deemed University",
+    "accreditation": "NAAC A++ / NIRF #19",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "address": "SRM Nagar, Kattankulathur, Chengalpattu, Tamil Nadu 603203",
+    "pincode": "603203",
+    "nirfRank": 19,
+    "overallRating": 4.3,
+    "reviewCount": 540,
+    "minFee": 350000,
+    "maxFee": 420000,
+    "avgPackage": 8.5,
+    "highestPackage": 45,
+    "medianPackage": 6.8,
+    "placementRate": 87,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 350000,
+        "otherFees": 30000,
+        "seatsAvailable": 700,
+        "eligibility": "10+2 PCM 50% + qualified SRMJEEE"
+      },
+      {
+        "code": "AI_ML",
+        "name": "CSE (AI & Machine Learning)",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 380000,
+        "otherFees": 30000,
+        "seatsAvailable": 300,
+        "eligibility": "10+2 PCM 50% + qualified SRMJEEE"
+      },
+      {
+        "code": "ME",
+        "name": "Mechanical Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 300000,
+        "otherFees": 28000,
+        "seatsAvailable": 250,
+        "eligibility": "10+2 PCM 50% + qualified SRMJEEE"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 8.5,
+        "highestPackage": 45,
+        "medianPackage": 6.8,
+        "placementRate": 87,
+        "topRecruiters": [
+          "Amazon",
+          "Zoho",
+          "TCS",
+          "Infosys",
+          "Cognizant",
+          "HCLTech",
+          "Wipro"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "thapar-patiala",
+    "name": "Thapar Institute of Engineering & Technology",
+    "shortName": "Thapar Patiala",
+    "description": "Thapar Institute is a premier private deemed university in Patiala, Punjab, known for strong CSE placements, well-maintained campus, and industry-oriented curriculum with research focus.",
+    "establishmentYear": 1956,
+    "institutionType": "PRIVATE_UNIVERSITY",
+    "ownership": "PRIVATE",
+    "affiliation": "Deemed University",
+    "accreditation": "NAAC A / NIRF #33",
+    "city": "Patiala",
+    "state": "Punjab",
+    "address": "Bhadson Rd, Adarsh Nagar, Patiala, Punjab 147004",
+    "pincode": "147004",
+    "nirfRank": 33,
+    "overallRating": 4.4,
+    "reviewCount": 280,
+    "minFee": 380000,
+    "maxFee": 420000,
+    "avgPackage": 12.5,
+    "highestPackage": 52,
+    "medianPackage": 10,
+    "placementRate": 89,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 380000,
+        "otherFees": 30000,
+        "seatsAvailable": 180,
+        "eligibility": "10+2 PCM 60% + JEE Main score"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 370000,
+        "otherFees": 30000,
+        "seatsAvailable": 120,
+        "eligibility": "10+2 PCM 60% + JEE Main score"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 12.5,
+        "highestPackage": 52,
+        "medianPackage": 10,
+        "placementRate": 89,
+        "topRecruiters": [
+          "Microsoft",
+          "Amazon",
+          "Deloitte",
+          "Myntra",
+          "Zomato",
+          "Adobe",
+          "Capgemini"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "amity-noida",
+    "name": "Amity University Noida",
+    "shortName": "Amity Noida",
+    "description": "Amity University Noida is one of India's largest private universities offering 200+ programs across 13 campuses. Known for its corporate partnerships, international tie-ups, and diverse campus life.",
+    "establishmentYear": 2005,
+    "institutionType": "PRIVATE_UNIVERSITY",
+    "ownership": "PRIVATE",
+    "affiliation": "State Private University (UP)",
+    "accreditation": "NAAC A+",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "address": "Sector 125, Noida, Uttar Pradesh 201313",
+    "pincode": "201313",
+    "nirfRank": 80,
+    "overallRating": 4,
+    "reviewCount": 480,
+    "minFee": 380000,
+    "maxFee": 450000,
+    "avgPackage": 6.5,
+    "highestPackage": 32,
+    "medianPackage": 5,
+    "placementRate": 78,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 380000,
+        "otherFees": 40000,
+        "seatsAvailable": 500,
+        "eligibility": "10+2 PCM 60% + Amity JEE / JEE Main"
+      },
+      {
+        "code": "AI",
+        "name": "Artificial Intelligence",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 400000,
+        "otherFees": 40000,
+        "seatsAvailable": 200,
+        "eligibility": "10+2 PCM 60% + Amity JEE / JEE Main"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 360000,
+        "otherFees": 40000,
+        "seatsAvailable": 300,
+        "eligibility": "10+2 PCM 60% + Amity JEE / JEE Main"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 6.5,
+        "highestPackage": 32,
+        "medianPackage": 5,
+        "placementRate": 78,
+        "topRecruiters": [
+          "Wipro",
+          "Cognizant",
+          "HCLTech",
+          "Capgemini",
+          "TCS",
+          "Infosys",
+          "Ernst & Young"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "chandigarh-university",
+    "name": "Chandigarh University",
+    "shortName": "CU Chandigarh",
+    "description": "Chandigarh University is a private university in Gharuan, Punjab, that has rapidly risen in NIRF rankings. It holds the Guinness World Record for the largest number of campus placements and is known for its modern infrastructure.",
+    "establishmentYear": 2012,
+    "institutionType": "PRIVATE_UNIVERSITY",
+    "ownership": "PRIVATE",
+    "affiliation": "State Private University (Punjab)",
+    "accreditation": "NAAC A+ / NIRF #27",
+    "city": "Mohali",
+    "state": "Punjab",
+    "address": "NH-95, Ludhiana - Chandigarh State Hwy, Gharuan, Mohali, Punjab 140413",
+    "pincode": "140413",
+    "nirfRank": 27,
+    "overallRating": 4.2,
+    "reviewCount": 560,
+    "minFee": 260000,
+    "maxFee": 330000,
+    "avgPackage": 7.8,
+    "highestPackage": 48,
+    "medianPackage": 6,
+    "placementRate": 85,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 260000,
+        "otherFees": 28000,
+        "seatsAvailable": 800,
+        "eligibility": "10+2 PCM 60% + CUCET / JEE Main"
+      },
+      {
+        "code": "AI_ML",
+        "name": "CSE (AI & Machine Learning)",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 290000,
+        "otherFees": 28000,
+        "seatsAvailable": 300,
+        "eligibility": "10+2 PCM 60% + CUCET / JEE Main"
+      },
+      {
+        "code": "ME",
+        "name": "Mechanical Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 240000,
+        "otherFees": 28000,
+        "seatsAvailable": 200,
+        "eligibility": "10+2 PCM 60% + CUCET / JEE Main"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 7.8,
+        "highestPackage": 48,
+        "medianPackage": 6,
+        "placementRate": 85,
+        "topRecruiters": [
+          "Amazon",
+          "Infosys",
+          "TCS",
+          "Cognizant",
+          "HCLTech",
+          "Wipro",
+          "Deloitte"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "lpu-jalandhar",
+    "name": "Lovely Professional University",
+    "shortName": "LPU",
+    "description": "LPU is India's largest single-campus private university with 30,000+ students. Located in Phagwara, Punjab, it offers massive program variety, a strong sports culture, and one of the highest campus placement records among private universities.",
+    "establishmentYear": 2005,
+    "institutionType": "PRIVATE_UNIVERSITY",
+    "ownership": "PRIVATE",
+    "affiliation": "State Private University (Punjab)",
+    "accreditation": "NAAC A++ / NIRF #34",
+    "city": "Phagwara",
+    "state": "Punjab",
+    "address": "Grand Trunk Rd, Phagwara, Punjab 144411",
+    "pincode": "144411",
+    "nirfRank": 34,
+    "overallRating": 4.1,
+    "reviewCount": 700,
+    "minFee": 240000,
+    "maxFee": 320000,
+    "avgPackage": 6.8,
+    "highestPackage": 42,
+    "medianPackage": 5.2,
+    "placementRate": 82,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 240000,
+        "otherFees": 25000,
+        "seatsAvailable": 900,
+        "eligibility": "10+2 PCM 60% + LPUNEST / JEE Main"
+      },
+      {
+        "code": "AI",
+        "name": "Artificial Intelligence",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 260000,
+        "otherFees": 25000,
+        "seatsAvailable": 300,
+        "eligibility": "10+2 PCM 60% + LPUNEST / JEE Main"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 220000,
+        "otherFees": 25000,
+        "seatsAvailable": 400,
+        "eligibility": "10+2 PCM 60% + LPUNEST / JEE Main"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 6.8,
+        "highestPackage": 42,
+        "medianPackage": 5.2,
+        "placementRate": 82,
+        "topRecruiters": [
+          "Amazon",
+          "Samsung",
+          "Wipro",
+          "TCS",
+          "Byju's",
+          "Cognizant",
+          "HCL"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "psg-coimbatore",
+    "name": "PSG College of Technology",
+    "shortName": "PSG Tech",
+    "description": "PSG College of Technology is a premier autonomous institution in Coimbatore, Tamil Nadu, known for its strong industry ties, excellent mechanical and CSE departments, and affordable education quality.",
+    "establishmentYear": 1951,
+    "institutionType": "AUTONOMOUS",
+    "ownership": "PRIVATE",
+    "affiliation": "Anna University (Autonomous)",
+    "accreditation": "NAAC A++ / NBA Accredited",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "address": "Peelamedu, Coimbatore, Tamil Nadu 641004",
+    "pincode": "641004",
+    "nirfRank": 42,
+    "overallRating": 4.5,
+    "reviewCount": 330,
+    "minFee": 120000,
+    "maxFee": 165000,
+    "avgPackage": 9.8,
+    "highestPackage": 44,
+    "medianPackage": 7.5,
+    "placementRate": 90,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 120000,
+        "otherFees": 15000,
+        "seatsAvailable": 120,
+        "eligibility": "10+2 PCM + TNEA counseling"
+      },
+      {
+        "code": "ME",
+        "name": "Mechanical Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 110000,
+        "otherFees": 15000,
+        "seatsAvailable": 120,
+        "eligibility": "10+2 PCM + TNEA counseling"
+      },
+      {
+        "code": "EEE",
+        "name": "Electrical & Electronics Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 110000,
+        "otherFees": 15000,
+        "seatsAvailable": 100,
+        "eligibility": "10+2 PCM + TNEA counseling"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 9.8,
+        "highestPackage": 44,
+        "medianPackage": 7.5,
+        "placementRate": 90,
+        "topRecruiters": [
+          "Zoho",
+          "Bosch",
+          "Caterpillar",
+          "TCS",
+          "Cognizant",
+          "L&T",
+          "Ashok Leyland"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cet-trivandrum",
+    "name": "College of Engineering Trivandrum",
+    "shortName": "CET Trivandrum",
+    "description": "CET Trivandrum is the oldest and most prestigious engineering college in Kerala, established in 1939. Known for producing top-calibre engineers at government-subsidized fees under KEAM counseling.",
+    "establishmentYear": 1939,
+    "institutionType": "STATE_UNIVERSITY",
+    "ownership": "PUBLIC",
+    "affiliation": "APJ Abdul Kalam Technological University",
+    "accreditation": "NAAC A / NBA Accredited",
+    "city": "Thiruvananthapuram",
+    "state": "Kerala",
+    "address": "Engineering College P.O., Thiruvananthapuram, Kerala 695016",
+    "pincode": "695016",
+    "nirfRank": 85,
+    "overallRating": 4.4,
+    "reviewCount": 220,
+    "minFee": 42000,
+    "maxFee": 55000,
+    "avgPackage": 8.2,
+    "highestPackage": 40,
+    "medianPackage": 6.5,
+    "placementRate": 85,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 42000,
+        "otherFees": 8000,
+        "seatsAvailable": 70,
+        "eligibility": "10+2 PCM + qualified KEAM"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 42000,
+        "otherFees": 8000,
+        "seatsAvailable": 70,
+        "eligibility": "10+2 PCM + qualified KEAM"
+      },
+      {
+        "code": "EE",
+        "name": "Electrical & Electronics Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 42000,
+        "otherFees": 8000,
+        "seatsAvailable": 70,
+        "eligibility": "10+2 PCM + qualified KEAM"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 8.2,
+        "highestPackage": 40,
+        "medianPackage": 6.5,
+        "placementRate": 85,
+        "topRecruiters": [
+          "TCS",
+          "Infosys",
+          "UST Global",
+          "Wipro",
+          "Ernst & Young",
+          "IBS Software",
+          "Envestnet"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "rvce-bangalore",
+    "name": "RV College of Engineering",
+    "shortName": "RVCE Bangalore",
+    "description": "RVCE is one of Bangalore's most reputed private engineering colleges, strategically located in the IT hub of Mysore Road. Known for strong industry connections, competitive COMEDK admissions, and excellent CSE placements.",
+    "establishmentYear": 1963,
+    "institutionType": "AUTONOMOUS",
+    "ownership": "PRIVATE",
+    "affiliation": "Visvesvaraya Technological University (Autonomous)",
+    "accreditation": "NAAC A++ / NBA Accredited",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "address": "Mysuru Rd, RV Vidyaniketan Post, Bangalore, Karnataka 560059",
+    "pincode": "560059",
+    "nirfRank": 48,
+    "overallRating": 4.4,
+    "reviewCount": 350,
+    "minFee": 280000,
+    "maxFee": 340000,
+    "avgPackage": 12.8,
+    "highestPackage": 62,
+    "medianPackage": 10.2,
+    "placementRate": 91,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 280000,
+        "otherFees": 25000,
+        "seatsAvailable": 180,
+        "eligibility": "10+2 PCM + COMEDK / KCET / JEE Main"
+      },
+      {
+        "code": "AI_ML",
+        "name": "CSE (AI & Machine Learning)",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 300000,
+        "otherFees": 25000,
+        "seatsAvailable": 60,
+        "eligibility": "10+2 PCM + COMEDK / KCET / JEE Main"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 280000,
+        "otherFees": 25000,
+        "seatsAvailable": 120,
+        "eligibility": "10+2 PCM + COMEDK / KCET / JEE Main"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 12.8,
+        "highestPackage": 62,
+        "medianPackage": 10.2,
+        "placementRate": 91,
+        "topRecruiters": [
+          "Google",
+          "Amazon",
+          "Microsoft",
+          "Oracle",
+          "SAP",
+          "Cisco",
+          "Bosch"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "iit-guwahati",
+    "name": "Indian Institute of Technology Guwahati",
+    "shortName": "IIT Guwahati",
+    "description": "Indian Institute of Technology Guwahati, located on the banks of the Brahmaputra in Assam, is the sixth IIT established in India and is renowned for its scenic campus, research output, and strong engineering programs.",
+    "establishmentYear": 1994,
+    "institutionType": "IIT",
+    "ownership": "PUBLIC",
+    "affiliation": "Autonomous (Institute of National Importance)",
+    "accreditation": "NIRF 2024 Engineering #7",
+    "city": "Guwahati",
+    "state": "Assam",
+    "address": "Amingaon, North Guwahati, Guwahati, Assam 781039",
+    "pincode": "781039",
+    "nirfRank": 7,
+    "overallRating": 4.7,
+    "reviewCount": 180,
+    "minFee": 210000,
+    "maxFee": 220000,
+    "avgPackage": 21.5,
+    "highestPackage": 85,
+    "medianPackage": 17.2,
+    "placementRate": 92.5,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 210000,
+        "seatsAvailable": 120,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 210000,
+        "seatsAvailable": 90,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      },
+      {
+        "code": "ME",
+        "name": "Mechanical Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 210000,
+        "seatsAvailable": 100,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 21.5,
+        "highestPackage": 85,
+        "medianPackage": 17.2,
+        "placementRate": 92.5,
+        "topRecruiters": [
+          "Microsoft",
+          "Amazon",
+          "Google",
+          "Qualcomm",
+          "Goldman Sachs",
+          "Intel"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "iit-bhu",
+    "name": "Indian Institute of Technology (BHU) Varanasi",
+    "shortName": "IIT BHU",
+    "description": "IIT (BHU) Varanasi, situated within the historic Banaras Hindu University campus, combines century-old academic heritage with modern engineering education and research.",
+    "establishmentYear": 1919,
+    "institutionType": "IIT",
+    "ownership": "PUBLIC",
+    "affiliation": "Autonomous (Institute of National Importance)",
+    "accreditation": "NIRF 2024 Engineering #14",
+    "city": "Varanasi",
+    "state": "Uttar Pradesh",
+    "address": "Lanka, Varanasi, Uttar Pradesh 221005",
+    "pincode": "221005",
+    "nirfRank": 14,
+    "overallRating": 4.5,
+    "reviewCount": 240,
+    "minFee": 200000,
+    "maxFee": 240000,
+    "avgPackage": 16.8,
+    "highestPackage": 65,
+    "medianPackage": 13.5,
+    "placementRate": 88,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 200000,
+        "seatsAvailable": 100,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      },
+      {
+        "code": "EE",
+        "name": "Electrical Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 200000,
+        "seatsAvailable": 130,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 16.8,
+        "highestPackage": 65,
+        "medianPackage": 13.5,
+        "placementRate": 88,
+        "topRecruiters": [
+          "Microsoft",
+          "Amazon",
+          "Adobe",
+          "Wipro",
+          "TCS Digital",
+          "Oracle"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "iit-hyderabad",
+    "name": "Indian Institute of Technology Hyderabad",
+    "shortName": "IIT Hyderabad",
+    "description": "IIT Hyderabad is one of the newer IITs (est. 2008) that has rapidly risen in research rankings, known for its innovation ecosystem, fractal academics, and strong industry links in the Hyderabad tech corridor.",
+    "establishmentYear": 2008,
+    "institutionType": "IIT",
+    "ownership": "PUBLIC",
+    "affiliation": "Autonomous (Institute of National Importance)",
+    "accreditation": "NIRF 2024 Engineering #8",
+    "city": "Sangareddy",
+    "state": "Telangana",
+    "address": "Kandi, Sangareddy, Telangana 502285",
+    "pincode": "502285",
+    "nirfRank": 8,
+    "overallRating": 4.6,
+    "reviewCount": 130,
+    "minFee": 220000,
+    "maxFee": 230000,
+    "avgPackage": 22,
+    "highestPackage": 78,
+    "medianPackage": 17,
+    "placementRate": 90,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 220000,
+        "seatsAvailable": 90,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      },
+      {
+        "code": "AI",
+        "name": "Artificial Intelligence",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 230000,
+        "seatsAvailable": 30,
+        "eligibility": "10+2 with PCM + qualified JEE Advanced"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 22,
+        "highestPackage": 78,
+        "medianPackage": 17,
+        "placementRate": 90,
+        "topRecruiters": [
+          "Google",
+          "Microsoft",
+          "Amazon",
+          "Qualcomm",
+          "NVIDIA",
+          "Uber"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "iiit-bangalore",
+    "name": "International Institute of Information Technology Bangalore",
+    "shortName": "IIIT-B",
+    "description": "IIIT Bangalore is a premier research-focused graduate and post-graduate IT institution in India's technology capital, famous for its 100% placement record and strong MS/MTech research programs.",
+    "establishmentYear": 1999,
+    "institutionType": "IIIT",
+    "ownership": "PUBLIC",
+    "affiliation": "Autonomous (Deemed University)",
+    "accreditation": "AICTE Approved",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "address": "26/C, Electronics City, Hosur Road, Bengaluru, Karnataka 560100",
+    "pincode": "560100",
+    "nirfRank": null,
+    "overallRating": 4.6,
+    "reviewCount": 95,
+    "minFee": 300000,
+    "maxFee": 360000,
+    "avgPackage": 24,
+    "highestPackage": 60,
+    "medianPackage": 19.5,
+    "placementRate": 98,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering (Integrated MTech)",
+        "degree": "MTECH",
+        "durationYears": 5,
+        "annualTuition": 300000,
+        "seatsAvailable": 60,
+        "eligibility": "JEE Main rank via JoSAA/CSAB"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 24,
+        "highestPackage": 60,
+        "medianPackage": 19.5,
+        "placementRate": 98,
+        "topRecruiters": [
+          "Google",
+          "Microsoft",
+          "Amazon",
+          "Adobe",
+          "Goldman Sachs",
+          "Cisco"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "iiit-delhi",
+    "name": "Indraprastha Institute of Information Technology Delhi",
+    "shortName": "IIIT-Delhi",
+    "description": "IIIT-Delhi is a state university focused on IT and allied areas, known for its research culture, tight industry alignment with Delhi NCR tech companies, and modern Okhla campus.",
+    "establishmentYear": 2008,
+    "institutionType": "IIIT",
+    "ownership": "PUBLIC",
+    "affiliation": "State University (Govt. of NCT of Delhi)",
+    "accreditation": "AICTE / UGC",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "address": "Okhla Industrial Estate, Phase III, New Delhi 110020",
+    "pincode": "110020",
+    "nirfRank": null,
+    "overallRating": 4.5,
+    "reviewCount": 110,
+    "minFee": 360000,
+    "maxFee": 400000,
+    "avgPackage": 23,
+    "highestPackage": 82,
+    "medianPackage": 18,
+    "placementRate": 95,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 360000,
+        "seatsAvailable": 150,
+        "eligibility": "JEE Main rank via JAC Delhi counselling"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 360000,
+        "seatsAvailable": 60,
+        "eligibility": "JEE Main rank via JAC Delhi counselling"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 23,
+        "highestPackage": 82,
+        "medianPackage": 18,
+        "placementRate": 95,
+        "topRecruiters": [
+          "Google",
+          "Microsoft",
+          "Amazon",
+          "Sprinklr",
+          "Uber",
+          "Bloomberg"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "nit-calicut",
+    "name": "National Institute of Technology Calicut",
+    "shortName": "NIT Calicut",
+    "description": "NIT Calicut, set in the lush Chathamangalam hills of Kerala, is among the top NITs with strong B.Tech, M.Tech and MBA programs and an active startup incubation cell.",
+    "establishmentYear": 1961,
+    "institutionType": "NIT",
+    "ownership": "PUBLIC",
+    "affiliation": "Institute of National Importance",
+    "accreditation": "NIRF 2024 Engineering #23",
+    "city": "Kozhikode",
+    "state": "Kerala",
+    "address": "NIT Campus PO, Chathamangalam, Kozhikode, Kerala 673601",
+    "pincode": "673601",
+    "nirfRank": 23,
+    "overallRating": 4.4,
+    "reviewCount": 210,
+    "minFee": 150000,
+    "maxFee": 175000,
+    "avgPackage": 14.5,
+    "highestPackage": 55,
+    "medianPackage": 11,
+    "placementRate": 85,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 150000,
+        "seatsAvailable": 130,
+        "eligibility": "JEE Main rank via JoSAA/CSAB"
+      },
+      {
+        "code": "EE",
+        "name": "Electrical Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 150000,
+        "seatsAvailable": 100,
+        "eligibility": "JEE Main rank via JoSAA/CSAB"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 14.5,
+        "highestPackage": 55,
+        "medianPackage": 11,
+        "placementRate": 85,
+        "topRecruiters": [
+          "Microsoft",
+          "Amazon",
+          "Oracle",
+          "Cisco",
+          "Bosch",
+          "Deloitte"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "nit-rourkela",
+    "name": "National Institute of Technology Rourkela",
+    "shortName": "NIT Rourkela",
+    "description": "NIT Rourkela is one of India's premier technical institutions in Odisha, with a large 700-acre campus, extensive research centers, and consistently strong placement outcomes.",
+    "establishmentYear": 1961,
+    "institutionType": "NIT",
+    "ownership": "PUBLIC",
+    "affiliation": "Institute of National Importance",
+    "accreditation": "NIRF 2024 Engineering #19",
+    "city": "Rourkela",
+    "state": "Odisha",
+    "address": "Sector 1, Rourkela, Odisha 769008",
+    "pincode": "769008",
+    "nirfRank": 19,
+    "overallRating": 4.4,
+    "reviewCount": 260,
+    "minFee": 150000,
+    "maxFee": 170000,
+    "avgPackage": 15,
+    "highestPackage": 52,
+    "medianPackage": 11.5,
+    "placementRate": 87,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 150000,
+        "seatsAvailable": 140,
+        "eligibility": "JEE Main rank via JoSAA/CSAB"
+      },
+      {
+        "code": "ME",
+        "name": "Mechanical Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 150000,
+        "seatsAvailable": 180,
+        "eligibility": "JEE Main rank via JoSAA/CSAB"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 15,
+        "highestPackage": 52,
+        "medianPackage": 11.5,
+        "placementRate": 87,
+        "topRecruiters": [
+          "Amazon",
+          "Microsoft",
+          "Tata Steel",
+          "Wipro",
+          "Accenture",
+          "Qualcomm"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "iiest-shibpur",
+    "name": "IIEST Shibpur — Indian Institute of Engineering Science and Technology",
+    "shortName": "IIEST Shibpur",
+    "description": "IIEST Shibpur, one of India's oldest engineering institutions (est. 1856), converted from Bengal Engineering College to an institute of national importance and is known for its heritage campus and strong core engineering programs.",
+    "establishmentYear": 1856,
+    "institutionType": "STATE_UNIVERSITY",
+    "ownership": "PUBLIC",
+    "affiliation": "Institute of National Importance",
+    "accreditation": "NIRF 2024 Engineering #35",
+    "city": "Howrah",
+    "state": "West Bengal",
+    "address": "P.O. Botanic Garden, Howrah, West Bengal 711103",
+    "pincode": "711103",
+    "nirfRank": 35,
+    "overallRating": 4.2,
+    "reviewCount": 190,
+    "minFee": 100000,
+    "maxFee": 130000,
+    "avgPackage": 10.5,
+    "highestPackage": 45,
+    "medianPackage": 8.5,
+    "placementRate": 80,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 100000,
+        "seatsAvailable": 130,
+        "eligibility": "JEE Main rank via JoSAA/CSAB"
+      },
+      {
+        "code": "ME",
+        "name": "Mechanical Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 100000,
+        "seatsAvailable": 180,
+        "eligibility": "JEE Main rank via JoSAA/CSAB"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 10.5,
+        "highestPackage": 45,
+        "medianPackage": 8.5,
+        "placementRate": 80,
+        "topRecruiters": [
+          "TCS",
+          "Wipro",
+          "Cognizant",
+          "Capgemini",
+          "L&T",
+          "Amazon"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "jmi-new-delhi",
+    "name": "Jamia Millia Islamia — Faculty of Engineering & Technology",
+    "shortName": "Jamia Millia Islamia",
+    "description": "Jamia Millia Islamia's Faculty of Engineering and Technology is a centrally funded institution in New Delhi offering quality engineering education at highly affordable fees.",
+    "establishmentYear": 1985,
+    "institutionType": "CENTRAL_UNIVERSITY",
+    "ownership": "PUBLIC",
+    "affiliation": "Central University",
+    "accreditation": "NAAC A++",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "address": "Jamia Nagar, Okhla, New Delhi 110025",
+    "pincode": "110025",
+    "nirfRank": 26,
+    "overallRating": 4.2,
+    "reviewCount": 150,
+    "minFee": 35000,
+    "maxFee": 60000,
+    "avgPackage": 9.5,
+    "highestPackage": 40,
+    "medianPackage": 7.5,
+    "placementRate": 78,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 35000,
+        "seatsAvailable": 170,
+        "eligibility": "JEE Main rank via JMI counselling"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics & Communication Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 35000,
+        "seatsAvailable": 100,
+        "eligibility": "JEE Main rank via JMI counselling"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 9.5,
+        "highestPackage": 40,
+        "medianPackage": 7.5,
+        "placementRate": 78,
+        "topRecruiters": [
+          "Microsoft",
+          "TCS",
+          "Wipro",
+          "Accenture",
+          "Deloitte",
+          "IBM"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "amu-zakir-husain",
+    "name": "Zakir Husain College of Engineering & Technology, AMU",
+    "shortName": "ZHCET AMU",
+    "description": "Zakir Husain College of Engineering and Technology at Aligarh Muslim University is one of India's oldest engineering colleges, offering affordable and respected B.Tech programs.",
+    "establishmentYear": 1938,
+    "institutionType": "CENTRAL_UNIVERSITY",
+    "ownership": "PUBLIC",
+    "affiliation": "Aligarh Muslim University",
+    "accreditation": "NAAC A+",
+    "city": "Aligarh",
+    "state": "Uttar Pradesh",
+    "address": "AMU Campus, Aligarh, Uttar Pradesh 202002",
+    "pincode": "202002",
+    "nirfRank": null,
+    "overallRating": 4,
+    "reviewCount": 120,
+    "minFee": 30000,
+    "maxFee": 50000,
+    "avgPackage": 8.5,
+    "highestPackage": 35,
+    "medianPackage": 6.8,
+    "placementRate": 75,
+    "courses": [
+      {
+        "code": "CSE",
+        "name": "Computer Science & Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 30000,
+        "seatsAvailable": 120,
+        "eligibility": "AMU entrance / JEE Main"
+      },
+      {
+        "code": "ME",
+        "name": "Mechanical Engineering",
+        "degree": "BTECH",
+        "durationYears": 4,
+        "annualTuition": 30000,
+        "seatsAvailable": 140,
+        "eligibility": "AMU entrance / JEE Main"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 8.5,
+        "highestPackage": 35,
+        "medianPackage": 6.8,
+        "placementRate": 75,
+        "topRecruiters": [
+          "TCS",
+          "Wipro",
+          "Infosys",
+          "Samsung R&D",
+          "L&T",
+          "Vodafone"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "jnu-delhi",
+    "name": "Jawaharlal Nehru University",
+    "shortName": "JNU",
+    "description": "Jawaharlal Nehru University in New Delhi is India's top-ranked university in the NIRF overall category multiple times, famous for its research-intensive science schools and vibrant academic culture.",
+    "establishmentYear": 1969,
+    "institutionType": "CENTRAL_UNIVERSITY",
+    "ownership": "PUBLIC",
+    "affiliation": "Central University",
+    "accreditation": "NAAC A++ / NIRF #2 University",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "address": "New Mehrauli Road, Near Munirka, New Delhi 110067",
+    "pincode": "110067",
+    "nirfRank": 3,
+    "overallRating": 4.7,
+    "reviewCount": 320,
+    "minFee": 5000,
+    "maxFee": 15000,
+    "avgPackage": 12,
+    "highestPackage": 42,
+    "medianPackage": 9,
+    "placementRate": 82,
+    "courses": [
+      {
+        "code": "MSC",
+        "name": "M.Sc Computer Science (SC/SSS)",
+        "degree": "MSC",
+        "durationYears": 2,
+        "annualTuition": 5000,
+        "seatsAvailable": 60,
+        "eligibility": "JNU Entrance Examination"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 12,
+        "highestPackage": 42,
+        "medianPackage": 9,
+        "placementRate": 82,
+        "topRecruiters": [
+          "Google",
+          "Microsoft",
+          "Amazon",
+          "Goldman Sachs",
+          "Adobe",
+          "DRDO Labs"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "hyderabad-university",
+    "name": "University of Hyderabad",
+    "shortName": "UoH",
+    "description": "The University of Hyderabad (est. 1974) is a premier central research university on a sprawling 2300-acre campus near Gachibowli, known for its science schools and interdisciplinary research.",
+    "establishmentYear": 1974,
+    "institutionType": "CENTRAL_UNIVERSITY",
+    "ownership": "PUBLIC",
+    "affiliation": "Central University",
+    "accreditation": "NAAC A+ / NIRF Top-20 University",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "address": "Prof. C.R. Rao Road, Gachibowli, Hyderabad, Telangana 500046",
+    "pincode": "500046",
+    "nirfRank": 20,
+    "overallRating": 4.5,
+    "reviewCount": 140,
+    "minFee": 8000,
+    "maxFee": 25000,
+    "avgPackage": 10,
+    "highestPackage": 38,
+    "medianPackage": 8,
+    "placementRate": 80,
+    "courses": [
+      {
+        "code": "MSC",
+        "name": "M.Sc Computer Science",
+        "degree": "MSC",
+        "durationYears": 2,
+        "annualTuition": 8000,
+        "seatsAvailable": 45,
+        "eligibility": "UoH entrance examination"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 10,
+        "highestPackage": 38,
+        "medianPackage": 8,
+        "placementRate": 80,
+        "topRecruiters": [
+          "Amazon",
+          "TCS Research",
+          "Infosys",
+          "Deloitte",
+          "Persistent Systems"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "krea-university",
+    "name": "Krea University — School of Interwoven Arts and Sciences",
+    "shortName": "Krea University",
+    "description": "Krea University near Chennai is a young private university pioneering the 'Interwoven Learning' model that blends sciences, arts, and humanities with experiential learning.",
+    "establishmentYear": 2018,
+    "institutionType": "PRIVATE_UNIVERSITY",
+    "ownership": "PRIVATE",
+    "affiliation": "Private University",
+    "accreditation": "UGC Recognized",
+    "city": "Sri City",
+    "state": "Tamil Nadu",
+    "address": "565, Sri City, Andhra Pradesh/Tamil Nadu Border, Chittoor District",
+    "pincode": "517646",
+    "nirfRank": null,
+    "overallRating": 4.3,
+    "reviewCount": 45,
+    "minFee": 400000,
+    "maxFee": 500000,
+    "avgPackage": 9,
+    "highestPackage": 30,
+    "medianPackage": 7.5,
+    "placementRate": 85,
+    "courses": [
+      {
+        "code": "BSC",
+        "name": "B.Sc (Hons) Computer Science",
+        "degree": "BSC",
+        "durationYears": 4,
+        "annualTuition": 400000,
+        "seatsAvailable": 40,
+        "eligibility": "Krea aptitude assessment + interview"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 9,
+        "highestPackage": 30,
+        "medianPackage": 7.5,
+        "placementRate": 85,
+        "topRecruiters": [
+          "TCS",
+          "Accenture",
+          "Deloitte",
+          "Zoho",
+          "Freshworks"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "shri-guru-tegh-bahadur-khalsa",
+    "name": "Sri Guru Tegh Bahadur Khalsa College, University of Delhi",
+    "shortName": "SGTB Khalsa College",
+    "description": "SGTB Khalsa College is a leading co-educational college under the University of Delhi in North Campus, ranked among top DU colleges for science and commerce programs.",
+    "establishmentYear": 1951,
+    "institutionType": "AUTONOMOUS",
+    "ownership": "PRIVATE",
+    "affiliation": "University of Delhi",
+    "accreditation": "NAAC A+",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "address": "University of Delhi, North Campus, New Delhi 110007",
+    "pincode": "110007",
+    "nirfRank": null,
+    "overallRating": 4.3,
+    "reviewCount": 85,
+    "minFee": 25000,
+    "maxFee": 40000,
+    "avgPackage": 6.5,
+    "highestPackage": 25,
+    "medianPackage": 5.5,
+    "placementRate": 72,
+    "courses": [
+      {
+        "code": "BSC",
+        "name": "B.Sc (Hons) Computer Science",
+        "degree": "BSC",
+        "durationYears": 3,
+        "annualTuition": 25000,
+        "seatsAvailable": 80,
+        "eligibility": "CUET UG examination score"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 6.5,
+        "highestPackage": 25,
+        "medianPackage": 5.5,
+        "placementRate": 72,
+        "topRecruiters": [
+          "Deloitte",
+          "EY",
+          "KPMG",
+          "TCS",
+          "Wipro",
+          "ZS Associates"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ashoka-university",
+    "name": "Ashoka University",
+    "shortName": "Ashoka",
+    "description": "Ashoka University in Sonipat is India's leading liberal arts and sciences university, known for its interdisciplinary curriculum, world-class faculty, and Young India Fellowship.",
+    "establishmentYear": 2014,
+    "institutionType": "PRIVATE_UNIVERSITY",
+    "ownership": "PRIVATE",
+    "affiliation": "Private University (UGC)",
+    "accreditation": "UGC Recognized",
+    "city": "Sonipat",
+    "state": "Haryana",
+    "address": "Rajiv Gandhi Education City, Sonipat, Haryana 131001",
+    "pincode": "131001",
+    "nirfRank": null,
+    "overallRating": 4.5,
+    "reviewCount": 95,
+    "minFee": 700000,
+    "maxFee": 850000,
+    "avgPackage": 11,
+    "highestPackage": 45,
+    "medianPackage": 9,
+    "placementRate": 88,
+    "courses": [
+      {
+        "code": "BSC",
+        "name": "B.Sc (Hons) Computer Science / Economics",
+        "degree": "BSC",
+        "durationYears": 3,
+        "annualTuition": 700000,
+        "seatsAvailable": 120,
+        "eligibility": "Ashoka entrance assessment + interview"
+      }
+    ],
+    "placements": [
+      {
+        "year": 2024,
+        "avgPackage": 11,
+        "highestPackage": 45,
+        "medianPackage": 9,
+        "placementRate": 88,
+        "topRecruiters": [
+          "McKinsey & Company",
+          "BCG",
+          "Bain",
+          "EY",
+          "Accenture Strategy",
+          "Razorpay"
+        ]
+      }
+    ]
+  }
+]

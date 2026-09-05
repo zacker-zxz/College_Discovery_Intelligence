@@ -1,0 +1,66 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js build output
+.next/
+out/
+build/
+dist/
+
+# Production
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# Environment variables — never commit real secrets
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# Keep the example template for reference
+!.env.example
+
+# Database
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+prisma/dev.db
+
+# AISHE Excel source files (34MB+ — too large for git; place in scripts/data/ locally)
+*.xlsx
+*.xls
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing coverage
+coverage/
+.nyc_output/
+
+# Vercel
+.vercel
+
+# Editor & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Misc
+*.pem
+*.key
+.vercel
