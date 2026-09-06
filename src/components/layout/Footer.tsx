@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { ShieldCheck, Database, FileText, ArrowRight, Sparkles, CheckCircle2 } from "lucide-react";
+import { ShieldCheck, Database, FileText, ArrowRight, Sparkles, CheckCircle2, Gamepad2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 export const Footer = () => {
@@ -152,7 +152,10 @@ export const Footer = () => {
           <div className="flex items-center gap-6 font-medium">
             <span className="hover:text-slate-200 cursor-pointer transition-colors">Privacy Policy</span>
             <span className="hover:text-slate-200 cursor-pointer transition-colors">Terms of Service</span>
-            <span className="hover:text-slate-200 cursor-pointer transition-colors">API Documentation</span>
+            <Link href="/playground" className="hover:text-slate-200 transition-colors flex items-center gap-1.5">
+              <Gamepad2 className="w-4 h-4" />
+              API Playground
+            </Link>
           </div>
         </div>
       </div>

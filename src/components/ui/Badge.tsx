@@ -17,13 +17,13 @@ export const Badge: React.FC<BadgeProps> = ({
   const base = "inline-flex items-center font-medium rounded border tracking-tight";
   
   const variants = {
-    slate: "bg-slate-100 text-slate-800 border-slate-200",
-    blue: "bg-blue-50 text-blue-800 border-blue-200",
-    green: "bg-emerald-50 text-emerald-800 border-emerald-200",
-    amber: "bg-amber-50 text-amber-900 border-amber-200",
-    red: "bg-red-50 text-red-800 border-red-200",
-    purple: "bg-purple-50 text-purple-800 border-purple-200",
-    outline: "bg-transparent text-slate-700 border-slate-300",
+    slate: "bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border-slate-200 dark:border-slate-700",
+    blue: "bg-blue-50 dark:bg-blue-950/60 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800",
+    green: "bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800",
+    amber: "bg-amber-50 dark:bg-amber-950/60 text-amber-900 dark:text-amber-300 border-amber-200 dark:border-amber-800",
+    red: "bg-red-50 dark:bg-red-950/60 text-red-800 dark:text-red-300 border-red-200 dark:border-red-800",
+    purple: "bg-purple-50 dark:bg-purple-950/60 text-purple-800 dark:text-purple-300 border-purple-200 dark:border-purple-800",
+    outline: "bg-transparent text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-700",
   };
 
   const sizes = {

@@ -139,7 +139,7 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
           onFocus={() => suggestions.length > 0 && setIsOpen(true)}
           placeholder={placeholder}
           autoFocus={autoFocus}
-          className={`w-full ${sizeClasses} pl-12 pr-4 font-semibold text-slate-900 placeholder:text-slate-400 bg-transparent focus:outline-none ${inputClassName}`}
+          className={`w-full ${sizeClasses} pl-12 pr-4 font-semibold text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 bg-transparent focus:outline-none ${inputClassName}`}
         />
         {isLoading && (
           <div className="absolute right-4 top-1/2 -translate-y-1/2">
@@ -155,10 +155,10 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 4, scale: 0.98 }}
             transition={{ duration: 0.15 }}
-            className="absolute top-full left-0 right-0 mt-2 bg-white rounded-xl border border-slate-200 shadow-elevated z-50 overflow-hidden max-h-[420px] overflow-y-auto"
+            className="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-elevated z-50 overflow-hidden max-h-[420px] overflow-y-auto"
           >
-            <div className="px-3 py-2 border-b border-slate-100">
-              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+            <div className="px-3 py-2 border-b border-slate-100 dark:border-slate-800">
+              <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
                 {suggestions.length} Match{suggestions.length !== 1 ? "es" : ""} Found
               </span>
             </div>
@@ -170,28 +170,28 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
                 transition={{ delay: i * 0.03 }}
                 onClick={() => handleSelect(s.slug)}
                 onMouseEnter={() => setActiveIndex(i)}
-                className={`w-full text-left px-4 py-3 flex items-center gap-3 transition-colors border-b border-slate-50 last:border-b-0 group/item ${
-                  activeIndex === i ? "bg-blue-50/80" : "hover:bg-slate-50"
+                className={`w-full text-left px-4 py-3 flex items-center gap-3 transition-colors border-b border-slate-50 dark:border-slate-800/50 last:border-b-0 group/item ${
+                  activeIndex === i ? "bg-blue-50/80 dark:bg-blue-950/60" : "hover:bg-slate-50 dark:hover:bg-slate-800/50"
                 }`}
               >
                 {/* College Icon */}
                 <div className={`w-9 h-9 rounded-lg flex items-center justify-center text-xs font-extrabold shrink-0 ${
-                  activeIndex === i ? "bg-blue-600 text-white" : "bg-slate-100 text-slate-600"
+                  activeIndex === i ? "bg-blue-600 text-white" : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300"
                 } transition-colors`}>
                   {s.shortName?.charAt(0) || s.name.charAt(0)}
                 </div>
 
                 {/* College Info */}
                 <div className="flex-1 min-w-0">
-                  <div className="font-bold text-sm text-slate-900 truncate group-hover/item:text-blue-700 transition-colors">
+                  <div className="font-bold text-sm text-slate-900 dark:text-slate-100 truncate group-hover/item:text-blue-700 dark:group-hover/item:text-blue-400 transition-colors">
                     {s.name}
                   </div>
-                  <div className="flex items-center gap-2 text-[11px] text-slate-500 mt-0.5">
+                  <div className="flex items-center gap-2 text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
                     <span className="flex items-center gap-0.5">
                       <MapPin className="w-3 h-3" /> {s.city}, {s.state}
                     </span>
                     {s.nirfRank && (
-                      <span className="flex items-center gap-0.5 text-amber-600 font-semibold">
+                      <span className="flex items-center gap-0.5 text-amber-600 dark:text-amber-400 font-semibold">
                         <Award className="w-3 h-3" /> #{s.nirfRank}
                       </span>
                     )}

@@ -17,10 +17,10 @@ export const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages,
   }
 
   return (
-    <div className="flex items-center justify-between border-t border-slate-200 pt-4 mt-6">
-      <p className="text-xs text-slate-500">
-        Page <span className="font-medium text-slate-800">{currentPage}</span> of{" "}
-        <span className="font-medium text-slate-800">{totalPages}</span>
+    <div className="flex items-center justify-between border-t border-slate-200 dark:border-slate-800 pt-4 mt-6">
+      <p className="text-xs text-slate-500 dark:text-slate-400">
+        Page <span className="font-medium text-slate-800 dark:text-slate-200">{currentPage}</span> of{" "}
+        <span className="font-medium text-slate-800 dark:text-slate-200">{totalPages}</span>
       </p>
       <div className="flex items-center gap-1.5">
         <Button
@@ -37,8 +37,8 @@ export const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages,
             onClick={() => onPageChange(p)}
             className={`w-8 h-8 text-xs font-medium rounded-md transition-colors ${
               p === currentPage
-                ? "bg-slate-900 text-white shadow-xs"
-                : "bg-white text-slate-700 hover:bg-slate-100 border border-slate-200"
+                ? "bg-slate-900 dark:bg-blue-600 text-white shadow-xs"
+                : "bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700"
             }`}
           >
             {p}

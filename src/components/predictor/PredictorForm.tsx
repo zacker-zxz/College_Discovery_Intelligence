@@ -30,25 +30,25 @@ export const PredictorForm: React.FC<PredictorFormProps> = ({ onSubmit, isLoadin
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white border border-slate-200 rounded-lg p-6 shadow-subtle space-y-6">
-      <div className="flex items-center gap-2 border-b border-slate-100 pb-3">
-        <Sparkles className="w-5 h-5 text-blue-600" />
+    <form onSubmit={handleSubmit} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg p-6 shadow-subtle space-y-6">
+      <div className="flex items-center gap-2 border-b border-slate-100 dark:border-slate-800 pb-3">
+        <Sparkles className="w-5 h-5 text-blue-600 dark:text-blue-400" />
         <div>
-          <h2 className="font-bold text-slate-900 text-base">Admission Predictor Parameters</h2>
-          <p className="text-slate-500 text-xs">Enter your entrance examination details & All India rank</p>
+          <h2 className="font-bold text-slate-900 dark:text-slate-100 text-base">Admission Predictor Parameters</h2>
+          <p className="text-slate-500 dark:text-slate-400 text-xs">Enter your entrance examination details & All India rank</p>
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Entrance Exam Selection */}
         <div>
-          <label className="block text-xs font-semibold text-slate-700 mb-1">
+          <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
             Entrance Examination <span className="text-red-500">*</span>
           </label>
           <select
             value={exam}
             onChange={(e) => setExam(e.target.value)}
-            className="w-full px-3 py-2 text-xs border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 bg-white"
+            className="w-full px-3 py-2 text-xs border border-slate-200 dark:border-slate-700 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100"
           >
             <option value="JEE_MAIN">JEE Main (National Engineering)</option>
             <option value="JEE_ADVANCED">JEE Advanced (IITs)</option>
@@ -60,7 +60,7 @@ export const PredictorForm: React.FC<PredictorFormProps> = ({ onSubmit, isLoadin
 
         {/* Rank Input */}
         <div>
-          <label className="block text-xs font-semibold text-slate-700 mb-1">
+          <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
             All India / State Rank <span className="text-red-500">*</span>
           </label>
           <input
@@ -70,20 +70,20 @@ export const PredictorForm: React.FC<PredictorFormProps> = ({ onSubmit, isLoadin
             value={rank}
             onChange={(e) => setRank(e.target.value)}
             placeholder="e.g. 18450"
-            className="w-full px-3 py-2 text-xs border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 bg-white font-mono"
+            className="w-full px-3 py-2 text-xs border border-slate-200 dark:border-slate-700 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 font-mono"
             required
           />
         </div>
 
         {/* Reservation Category */}
         <div>
-          <label className="block text-xs font-semibold text-slate-700 mb-1">
+          <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
             Reservation Category
           </label>
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            className="w-full px-3 py-2 text-xs border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 bg-white"
+            className="w-full px-3 py-2 text-xs border border-slate-200 dark:border-slate-700 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100"
           >
             <option value="GENERAL">General / Open (GEN)</option>
             <option value="OBC">OBC-NCL</option>
@@ -95,13 +95,13 @@ export const PredictorForm: React.FC<PredictorFormProps> = ({ onSubmit, isLoadin
 
         {/* Preferred State (Optional) */}
         <div>
-          <label className="block text-xs font-semibold text-slate-700 mb-1">
+          <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
             Home State Quota (Optional)
           </label>
           <select
             value={state}
             onChange={(e) => setState(e.target.value)}
-            className="w-full px-3 py-2 text-xs border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 bg-white"
+            className="w-full px-3 py-2 text-xs border border-slate-200 dark:border-slate-700 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100"
           >
             <option value="">All India Quota (All States)</option>
             <option value="Maharashtra">Maharashtra</option>

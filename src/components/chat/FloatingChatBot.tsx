@@ -123,7 +123,7 @@ export function FloatingChatBot() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.85, y: 20 }}
             transition={{ type: "spring", stiffness: 380, damping: 26 }}
-            className="mb-4 w-[92vw] sm:w-[390px] h-[540px] max-h-[82vh] bg-white/95 backdrop-blur-xl border border-slate-200/80 rounded-3xl shadow-2xl shadow-slate-900/15 flex flex-col overflow-hidden ring-1 ring-slate-900/5"
+            className="mb-4 w-[92vw] sm:w-[390px] h-[540px] max-h-[82vh] bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 rounded-3xl shadow-2xl shadow-slate-900/15 flex flex-col overflow-hidden ring-1 ring-slate-900/5 dark:ring-slate-100/10"
           >
             {/* WINDOW HEADER */}
             <div className="px-5 py-4 bg-gradient-to-r from-slate-900 via-slate-800 to-indigo-950 text-white flex items-center justify-between relative overflow-hidden">
@@ -219,7 +219,7 @@ export function FloatingChatBot() {
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
-                  className="bg-amber-50 border-b border-amber-100 px-4 py-2 flex items-center justify-between text-xs text-amber-800"
+                  className="bg-amber-50 dark:bg-amber-950/40 border-b border-amber-100 dark:border-amber-900/40 px-4 py-2 flex items-center justify-between text-xs text-amber-800 dark:text-amber-300"
                 >
                   <div className="flex items-center space-x-2">
                     <span className="flex h-2 w-2 relative">
@@ -232,7 +232,7 @@ export function FloatingChatBot() {
                   </div>
                   <button
                     onClick={() => setIsSleeping(false)}
-                    className="text-[11px] font-semibold text-indigo-600 hover:underline"
+                    className="text-[11px] font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
                   >
                     Wake Up
                   </button>
@@ -241,7 +241,7 @@ export function FloatingChatBot() {
             </AnimatePresence>
 
             {/* CHAT MESSAGES BODY */}
-            <div className="flex-1 p-4 overflow-y-auto space-y-3.5 bg-slate-50/50 scrollbar-thin scrollbar-thumb-slate-200">
+            <div className="flex-1 p-4 overflow-y-auto space-y-3.5 bg-slate-50/50 dark:bg-slate-950/60 scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-thumb-slate-800">
               {messages.map((msg) => (
                 <motion.div
                   key={msg.id}
@@ -256,13 +256,13 @@ export function FloatingChatBot() {
                     className={`max-w-[85%] px-3.5 py-2.5 rounded-2xl text-xs leading-relaxed ${
                       msg.sender === "user"
                         ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-br-xs shadow-md shadow-blue-500/10"
-                        : "bg-white text-slate-800 border border-slate-200/70 rounded-bl-xs shadow-sm"
+                        : "bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-200/70 dark:border-slate-700/60 rounded-bl-xs shadow-sm"
                     }`}
                   >
                     <p className="whitespace-pre-wrap">{msg.text}</p>
                   </div>
 
-                  <span className="text-[10px] text-slate-400 mt-1 px-1">
+                  <span className="text-[10px] text-slate-400 dark:text-slate-500 mt-1 px-1">
                     {msg.timestamp}
                   </span>
                 </motion.div>
@@ -273,9 +273,9 @@ export function FloatingChatBot() {
                 <motion.div
                   initial={{ opacity: 0, y: 5 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="flex items-center space-x-1.5 bg-white border border-slate-200/80 px-3 py-2 rounded-2xl rounded-bl-xs w-max shadow-sm"
+                  className="flex items-center space-x-1.5 bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700/80 px-3 py-2 rounded-2xl rounded-bl-xs w-max shadow-sm"
                 >
-                  <span className="text-[11px] text-slate-400 font-medium mr-1">
+                  <span className="text-[11px] text-slate-400 dark:text-slate-400 font-medium mr-1">
                     {isSleeping ? "Sleeping..." : "Typing"}
                   </span>
                   <motion.span
@@ -300,8 +300,8 @@ export function FloatingChatBot() {
             </div>
 
             {/* SUGGESTED PROMPT CHIPS */}
-            <div className="px-3 py-2 bg-slate-50 border-t border-slate-100">
-              <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider mb-1.5 px-1">
+            <div className="px-3 py-2 bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
+              <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-1.5 px-1">
                 Suggested Prompts
               </p>
               <div className="flex items-center space-x-1.5 overflow-x-auto pb-1 no-scrollbar scroll-smooth">
@@ -311,7 +311,7 @@ export function FloatingChatBot() {
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
                     onClick={() => handleSendMessage(prompt)}
-                    className="whitespace-nowrap text-[11px] font-medium bg-white hover:bg-blue-50 text-slate-700 hover:text-blue-600 px-2.5 py-1 rounded-full border border-slate-200/80 transition-colors shadow-2xs cursor-pointer"
+                    className="whitespace-nowrap text-[11px] font-medium bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-blue-950/60 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 px-2.5 py-1 rounded-full border border-slate-200/80 dark:border-slate-700/80 transition-colors shadow-2xs cursor-pointer"
                   >
                     {prompt}
                   </motion.button>
@@ -320,7 +320,7 @@ export function FloatingChatBot() {
             </div>
 
             {/* INPUT FOOTER */}
-            <div className="p-3 bg-white border-t border-slate-100 flex items-center space-x-2">
+            <div className="p-3 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 flex items-center space-x-2">
               <div className="flex-1 relative flex items-center">
                 <input
                   type="text"
@@ -332,11 +332,11 @@ export function FloatingChatBot() {
                       ? "Type a message (Bot is sleeping)..."
                       : "Ask about colleges, cutoffs, placements..."
                   }
-                  className="w-full pl-3.5 pr-9 py-2 text-xs bg-slate-100/80 hover:bg-slate-100 focus:bg-white text-slate-800 placeholder-slate-400 rounded-full border border-transparent focus:border-blue-500/50 focus:ring-2 focus:ring-blue-500/15 outline-none transition-all"
+                  className="w-full pl-3.5 pr-9 py-2 text-xs bg-slate-100/80 dark:bg-slate-800/80 hover:bg-slate-100 dark:hover:bg-slate-800 focus:bg-white dark:focus:bg-slate-800 text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 rounded-full border border-transparent focus:border-blue-500/50 focus:ring-2 focus:ring-blue-500/15 outline-none transition-all"
                 />
                 <button
                   type="button"
-                  className="absolute right-2.5 text-slate-400 hover:text-slate-600 transition-colors p-1 cursor-pointer"
+                  className="absolute right-2.5 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors p-1 cursor-pointer"
                   title="Attach file (UI demo)"
                 >
                   <Paperclip className="w-3.5 h-3.5" />

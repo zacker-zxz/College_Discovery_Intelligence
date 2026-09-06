@@ -62,15 +62,15 @@ export default function DiscussionsPage() {
   return (
     <div className="app-frame py-8 space-y-8">
       {/* Banner */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-5">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-5">
         <div>
-          <div className="flex items-center gap-2 text-xs font-semibold text-amber-600 uppercase tracking-wider mb-1">
+          <div className="flex items-center gap-2 text-xs font-semibold text-amber-600 dark:text-amber-400 uppercase tracking-wider mb-1">
             <MessageSquare className="w-4 h-4" /> Community Q&A Board
           </div>
-          <h1 className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
+          <h1 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">
             Student Discussions & Advice
           </h1>
-          <p className="text-slate-500 text-xs mt-1">
+          <p className="text-slate-500 dark:text-slate-400 text-xs mt-1">
             Browse peer discussions regarding cutoffs, faculty reviews, placement realities, and branch selection.
           </p>
         </div>
@@ -89,7 +89,7 @@ export default function DiscussionsPage() {
 
       {/* Search Bar */}
       <div className="relative max-w-xl">
-        <Search className="w-4 h-4 absolute left-3 top-3 text-slate-400" />
+        <Search className="w-4 h-4 absolute left-3 top-3 text-slate-400 dark:text-slate-500" />
         <input
           type="text"
           value={search}
@@ -98,7 +98,7 @@ export default function DiscussionsPage() {
             setPage(1);
           }}
           placeholder="Search question titles, topics, or colleges..."
-          className="w-full pl-9 pr-3 py-2.5 text-xs border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 bg-white"
+          className="w-full pl-9 pr-3 py-2.5 text-xs border border-slate-200 dark:border-slate-700 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100"
         />
       </div>
 
@@ -110,10 +110,10 @@ export default function DiscussionsPage() {
           ))}
         </div>
       ) : discussions.length === 0 ? (
-        <div className="bg-white border border-slate-200 rounded-lg p-12 text-center space-y-3">
-          <MessageSquare className="w-12 h-12 text-slate-300 mx-auto" />
-          <h3 className="text-base font-bold text-slate-800">No discussions found</h3>
-          <p className="text-xs text-slate-500">Be the first student to start a topic!</p>
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg p-12 text-center space-y-3">
+          <MessageSquare className="w-12 h-12 text-slate-300 dark:text-slate-600 mx-auto" />
+          <h3 className="text-base font-bold text-slate-800 dark:text-slate-200">No discussions found</h3>
+          <p className="text-xs text-slate-500 dark:text-slate-400">Be the first student to start a topic!</p>
         </div>
       ) : (
         <div className="space-y-4">

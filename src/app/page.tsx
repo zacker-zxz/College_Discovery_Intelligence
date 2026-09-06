@@ -154,8 +154,8 @@ export default function HomePage() {
             >
               {/* Badge */}
               <motion.div custom={0} variants={fadeInUp} className="flex justify-center">
-                <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 border border-blue-200 px-4 py-1.5 rounded-full text-xs font-semibold tracking-tight">
-                  <ShieldCheck className="w-4 h-4 text-blue-600" />
+                <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 px-4 py-1.5 rounded-full text-xs font-semibold tracking-tight">
+                  <ShieldCheck className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                   AISHE 2026 Directory — 52,000+ Institutions Indexed
                 </div>
               </motion.div>
@@ -165,11 +165,11 @@ export default function HomePage() {
                 text="Data-Driven College Discovery & Decision Intelligence"
                 highlightWords={["Decision", "Intelligence"]}
                 highlightClass="bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-600 bg-clip-text text-transparent"
-                className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.12]"
+                className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-slate-100 tracking-tight leading-[1.12]"
               />
 
               {/* Subtitle */}
-              <motion.p custom={2} variants={fadeInUp} className="text-slate-600 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+              <motion.p custom={2} variants={fadeInUp} className="text-slate-600 dark:text-slate-300 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
                 Search India&apos;s complete AISHE college directory, compare tuition fees vs. placement packages side-by-side, and predict admission chances with explainable cutoff algorithms.
               </motion.p>
 
@@ -177,7 +177,7 @@ export default function HomePage() {
               <motion.div custom={3} variants={fadeInUp} className="pt-2 max-w-2xl mx-auto">
                 {/* relative + z-50 pins this card (and its dropdown) above the
                     pills row below — the dropdown can never be overlapped */}
-                <div className="relative z-50 bg-white p-2 rounded-2xl shadow-elevated border border-slate-200">
+                <div className="relative z-50 bg-white dark:bg-slate-900 p-2 rounded-2xl shadow-elevated border border-slate-200 dark:border-slate-800">
                   <SearchAutocomplete
                     size="lg"
                     inputClassName="rounded-xl"
@@ -187,7 +187,7 @@ export default function HomePage() {
 
                 {/* Quick Filter Pills */}
                 <div className="flex items-center justify-center gap-2 text-xs mt-5 flex-wrap">
-                  <span className="font-semibold text-slate-500">Popular:</span>
+                  <span className="font-semibold text-slate-500 dark:text-slate-400">Popular:</span>
                   {[
                     { label: "IITs", href: "/colleges?type=IIT" },
                     { label: "NITs", href: "/colleges?type=NIT" },
@@ -199,7 +199,7 @@ export default function HomePage() {
                     <Link
                       key={f.label}
                       href={f.href}
-                      className="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 hover:bg-blue-100 hover:border-blue-400 hover:text-blue-800 font-semibold transition-all shadow-sm"
+                      className="px-3 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-blue-100 dark:hover:bg-blue-900/40 hover:border-blue-400 dark:hover:border-blue-600 hover:text-blue-800 dark:hover:text-blue-300 font-semibold transition-all shadow-sm"
                     >
                       {f.label}
                     </Link>
@@ -209,14 +209,14 @@ export default function HomePage() {
 
               {/* Stats strip — clean bordered card */}
               <motion.div custom={4} variants={fadeInUp} className="pt-3 flex justify-center">
-                <div className="inline-flex flex-wrap justify-center items-center gap-x-7 gap-y-3 rounded-2xl border border-slate-200 bg-white/80 backdrop-blur-sm px-7 py-3.5 shadow-sm">
+                <div className="inline-flex flex-wrap justify-center items-center gap-x-7 gap-y-3 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm px-7 py-3.5 shadow-sm">
                   {HERO_STATS.map((stat) => {
                     const Icon = stat.icon;
                     return (
                       <div key={stat.label} className="flex items-center gap-2.5">
-                        <Icon className="w-4 h-4 text-blue-600" />
-                        <span className="text-sm font-extrabold text-slate-900 tracking-tight">{stat.value}</span>
-                        <span className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">{stat.label}</span>
+                        <Icon className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                        <span className="text-sm font-extrabold text-slate-900 dark:text-slate-100 tracking-tight">{stat.value}</span>
+                        <span className="text-[10px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{stat.label}</span>
                       </div>
                     );
                   })}
@@ -228,7 +228,7 @@ export default function HomePage() {
           {/* College marquee — seamless, pause on hover */}
           <div className="relative pb-10 pt-2">
             <div className="text-center mb-5">
-              <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
+              <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
@@ -251,7 +251,7 @@ export default function HomePage() {
                     {MARQUEE_COLLEGES.map((name) => (
                       <span
                         key={`${copy}-${name}`}
-                        className="whitespace-nowrap px-4 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-semibold text-slate-600"
+                        className="whitespace-nowrap px-4 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs font-semibold text-slate-600 dark:text-slate-300"
                       >
                         {name}
                       </span>
@@ -275,13 +275,13 @@ export default function HomePage() {
             variants={staggerContainer}
           >
             <motion.div custom={0} variants={fadeInUp} className="text-center max-w-2xl mx-auto mb-14 space-y-3">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest">
+              <span className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">
                 Decision Framework
               </span>
-              <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+              <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight">
                 Commercial-Grade Counseling Tools
               </h2>
-              <p className="text-slate-500 text-sm max-w-lg mx-auto">
+              <p className="text-slate-500 dark:text-slate-400 text-sm max-w-lg mx-auto">
                 Architected to eliminate guesswork from higher education selection.
               </p>
             </motion.div>
@@ -293,18 +293,18 @@ export default function HomePage() {
                 return (
                   <motion.div key={tool.href} custom={i + 1} variants={fadeInUp}>
                     <Link href={tool.href} className="group block h-full">
-                      <div className="glass-card glass-card-hover rounded-2xl p-7 h-full space-y-5 border border-slate-200/80 hover:border-slate-400/60 relative overflow-hidden">
+                      <div className="glass-card glass-card-hover rounded-2xl p-7 h-full space-y-5 border border-slate-200/80 dark:border-slate-800 hover:border-slate-400/60 dark:hover:border-slate-700 relative overflow-hidden">
                         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity" />
-                        <div className={`w-14 h-14 rounded-xl ${colors.bg} ${colors.text} flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform`}>
+                        <div className={`w-14 h-14 rounded-xl ${colors.bg} dark:bg-slate-800 ${colors.text} flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform`}>
                           <Icon className="w-7 h-7" />
                         </div>
-                        <h3 className={`font-extrabold text-slate-900 text-lg ${colors.hover} transition-colors`}>
+                        <h3 className={`font-extrabold text-slate-900 dark:text-slate-100 text-lg ${colors.hover} transition-colors`}>
                           {tool.title}
                         </h3>
-                        <p className="text-slate-500 text-xs leading-relaxed">
+                        <p className="text-slate-500 dark:text-slate-400 text-xs leading-relaxed">
                           {tool.desc}
                         </p>
-                        <div className="flex items-center gap-1 text-xs font-semibold text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div className="flex items-center gap-1 text-xs font-semibold text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">
                           Explore <ArrowRight className="w-3.5 h-3.5" />
                         </div>
                       </div>
@@ -320,7 +320,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════
           SECTION 3 — ANIMATED STATS COUNTER BANNER (Light)
           ═══════════════════════════════════════════════════ */}
-      <section ref={statsRef} className="py-16 bg-slate-50 border-y border-slate-200 relative overflow-hidden">
+      <section ref={statsRef} className="py-16 bg-slate-50 dark:bg-slate-900/60 border-y border-slate-200 dark:border-slate-800 relative overflow-hidden">
         <motion.div
           initial="hidden"
           animate={statsInView ? "visible" : "hidden"}
@@ -338,14 +338,14 @@ export default function HomePage() {
               return (
                 <motion.div key={stat.label} custom={i} variants={fadeInUp} className="space-y-2">
                   <div className="flex justify-center mb-3">
-                    <div className="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-950/60 border border-blue-100 dark:border-blue-900/60 flex items-center justify-center">
+                      <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                     </div>
                   </div>
-                  <div className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
+                  <div className="text-3xl md:text-4xl font-black text-slate-900 dark:text-slate-100 tracking-tight">
                     {stat.value.toLocaleString()}{stat.suffix}
                   </div>
-                  <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                  <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                     {stat.label}
                   </div>
                 </motion.div>
@@ -367,13 +367,13 @@ export default function HomePage() {
           >
             <motion.div custom={0} variants={fadeInUp} className="flex flex-col md:flex-row items-start md:items-end justify-between gap-4 mb-12">
               <div>
-                <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-600 uppercase tracking-widest mb-2">
+                <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-widest mb-2">
                   <Zap className="w-4 h-4 text-emerald-500" /> Curated Recommendations
                 </div>
-                <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+                <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight">
                   Top College Recommendations
                 </h2>
-                <p className="text-sm text-slate-500 mt-2 max-w-lg">
+                <p className="text-sm text-slate-500 dark:text-slate-400 mt-2 max-w-lg">
                   Handpicked premier engineering & science institutions ranked by placement ROI and academic reputation.
                 </p>
               </div>
@@ -389,7 +389,7 @@ export default function HomePage() {
               {featuredColleges.map((college, i) => (
                 <motion.div key={college.id} custom={i + 1} variants={fadeInUp}>
                   <Link href={`/colleges/${college.slug}`} className="group block">
-                    <div className="glass-card glass-card-hover rounded-2xl p-6 h-full space-y-4 border border-slate-200/80 hover:border-slate-400/60 relative overflow-hidden">
+                    <div className="glass-card glass-card-hover rounded-2xl p-6 h-full space-y-4 border border-slate-200/80 dark:border-slate-800 hover:border-slate-400/60 dark:hover:border-slate-700 relative overflow-hidden">
                       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity" />
 
                       <div className="flex items-start justify-between">
@@ -403,14 +403,14 @@ export default function HomePage() {
                             </Badge>
                           )}
                         </div>
-                        <Bookmark className="w-4 h-4 text-slate-300 group-hover:text-amber-400 transition-colors" />
+                        <Bookmark className="w-4 h-4 text-slate-300 dark:text-slate-600 group-hover:text-amber-400 transition-colors" />
                       </div>
 
                       <div>
-                        <h3 className="font-extrabold text-slate-900 text-sm leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+                        <h3 className="font-extrabold text-slate-900 dark:text-slate-100 text-sm leading-snug group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
                           {college.name}
                         </h3>
-                        <div className="flex items-center gap-2 text-[11px] text-slate-500 mt-1">
+                        <div className="flex items-center gap-2 text-[11px] text-slate-500 dark:text-slate-400 mt-1">
                           <span className="flex items-center gap-0.5">
                             <MapPin className="w-3 h-3" /> {college.city}
                           </span>
@@ -420,18 +420,18 @@ export default function HomePage() {
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-3 gap-2 bg-slate-50/80 p-2.5 rounded-xl border border-slate-100 text-center">
+                      <div className="grid grid-cols-3 gap-2 bg-slate-50/80 dark:bg-slate-800/80 p-2.5 rounded-xl border border-slate-100 dark:border-slate-700/80 text-center">
                         <div>
-                          <span className="text-[9px] text-slate-500 block font-semibold uppercase">Avg Pkg</span>
-                          <span className="text-xs font-black text-blue-700">₹{college.avgPackage} L</span>
+                          <span className="text-[9px] text-slate-500 dark:text-slate-400 block font-semibold uppercase">Avg Pkg</span>
+                          <span className="text-xs font-black text-blue-700 dark:text-blue-400">₹{college.avgPackage} L</span>
                         </div>
                         <div>
-                          <span className="text-[9px] text-slate-500 block font-semibold uppercase">Fee</span>
-                          <span className="text-xs font-black text-slate-800">₹{college.minFee ? (college.minFee / 100000).toFixed(1) : "—"}L</span>
+                          <span className="text-[9px] text-slate-500 dark:text-slate-400 block font-semibold uppercase">Fee</span>
+                          <span className="text-xs font-black text-slate-800 dark:text-slate-100">₹{college.minFee ? (college.minFee / 100000).toFixed(1) : "—"}L</span>
                         </div>
                         <div>
-                          <span className="text-[9px] text-slate-500 block font-semibold uppercase">Rating</span>
-                          <span className="text-xs font-black text-slate-800 flex items-center justify-center gap-0.5">
+                          <span className="text-[9px] text-slate-500 dark:text-slate-400 block font-semibold uppercase">Rating</span>
+                          <span className="text-xs font-black text-slate-800 dark:text-slate-100 flex items-center justify-center gap-0.5">
                             <Star className="w-3 h-3 text-amber-500 fill-amber-500" /> {college.overallRating}
                           </span>
                         </div>
@@ -441,17 +441,17 @@ export default function HomePage() {
                       {college.courses && college.courses.length > 0 && (
                         <div className="flex items-center gap-1 flex-wrap">
                           {college.courses.slice(0, 3).map((cc: { id: string; course?: { code?: string; name?: string } }) => (
-                            <span key={cc.id} className="text-[10px] bg-white text-slate-600 font-semibold px-2 py-0.5 rounded-md border border-slate-200">
+                            <span key={cc.id} className="text-[10px] bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold px-2 py-0.5 rounded-md border border-slate-200 dark:border-slate-700">
                               {cc.course?.code || cc.course?.name}
                             </span>
                           ))}
                           {college.courses.length > 3 && (
-                            <span className="text-[10px] text-slate-400">+{college.courses.length - 3}</span>
+                            <span className="text-[10px] text-slate-400 dark:text-slate-500">+{college.courses.length - 3}</span>
                           )}
                         </div>
                       )}
 
-                      <div className="flex items-center gap-1 text-xs font-semibold text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity pt-1">
+                      <div className="flex items-center gap-1 text-xs font-semibold text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity pt-1">
                         View Details <ArrowRight className="w-3.5 h-3.5" />
                       </div>
                     </div>
@@ -474,56 +474,56 @@ export default function HomePage() {
             variants={staggerContainer}
           >
             <motion.div custom={0} variants={scaleIn}>
-              <div className="bg-slate-50 border border-slate-200 text-slate-900 rounded-3xl p-8 md:p-14 grid grid-cols-1 md:grid-cols-3 gap-10 items-center shadow-subtle relative overflow-hidden">
+              <div className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 rounded-3xl p-8 md:p-14 grid grid-cols-1 md:grid-cols-3 gap-10 items-center shadow-subtle relative overflow-hidden">
                 <div className="space-y-5 md:col-span-2 relative z-10">
-                  <div className="inline-flex items-center gap-2 text-xs text-blue-700 font-bold uppercase tracking-widest bg-blue-50 px-4 py-1.5 rounded-full border border-blue-200">
-                    <ShieldCheck className="w-4 h-4 text-blue-600" /> Provenance & Lineage
+                  <div className="inline-flex items-center gap-2 text-xs text-blue-700 dark:text-blue-300 font-bold uppercase tracking-widest bg-blue-50 dark:bg-blue-950/60 px-4 py-1.5 rounded-full border border-blue-200 dark:border-blue-800">
+                    <ShieldCheck className="w-4 h-4 text-blue-600 dark:text-blue-400" /> Provenance & Lineage
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                  <h3 className="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight leading-snug">
                     Transparent Ingestion Engine &<br className="hidden md:inline" /> Verified Data Sources
                   </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed max-w-xl">
+                  <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed max-w-xl">
                     Every college profile, cutoff rank range, and placement metric is normalized and deduplicated from official public portals. The full AISHE 2026 directory of 52,000+ institutions powers discovery, with NIRF-ranked profiles enriched by fees, placements, and cutoffs.
                   </p>
                   <div className="flex items-center gap-3 flex-wrap pt-2">
-                    <span className="inline-flex items-center gap-1.5 text-xs text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200 font-semibold">
+                    <span className="inline-flex items-center gap-1.5 text-xs text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/60 px-3 py-1.5 rounded-lg border border-emerald-200 dark:border-emerald-800 font-semibold">
                       <CheckCircle2 className="w-3.5 h-3.5" /> AISHE 2026
                     </span>
-                    <span className="inline-flex items-center gap-1.5 text-xs text-blue-700 bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-200 font-semibold">
+                    <span className="inline-flex items-center gap-1.5 text-xs text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-950/60 px-3 py-1.5 rounded-lg border border-blue-200 dark:border-blue-800 font-semibold">
                       <CheckCircle2 className="w-3.5 h-3.5" /> NIRF Verified
                     </span>
-                    <span className="inline-flex items-center gap-1.5 text-xs text-amber-700 bg-amber-50 px-3 py-1.5 rounded-lg border border-amber-200 font-semibold">
+                    <span className="inline-flex items-center gap-1.5 text-xs text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/60 px-3 py-1.5 rounded-lg border border-amber-200 dark:border-amber-800 font-semibold">
                       <CheckCircle2 className="w-3.5 h-3.5" /> JoSAA Cutoffs
                     </span>
                   </div>
                 </div>
 
-                <motion.div custom={1} variants={slideInRight} className="space-y-5 bg-white border border-slate-200 p-7 rounded-2xl text-sm relative z-10 shadow-sm">
+                <motion.div custom={1} variants={slideInRight} className="space-y-5 bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 p-7 rounded-2xl text-sm relative z-10 shadow-sm">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center">
-                      <TrendingUp className="w-5 h-5 text-emerald-600" />
+                    <div className="w-10 h-10 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-100 dark:border-emerald-900/60 flex items-center justify-center">
+                      <TrendingUp className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
                     </div>
                     <div>
-                      <span className="font-bold text-slate-900 block text-sm">AISHE Directory Sync</span>
-                      <span className="text-slate-500 text-xs">52,000+ institutions across 36 states</span>
+                      <span className="font-bold text-slate-900 dark:text-slate-100 block text-sm">AISHE Directory Sync</span>
+                      <span className="text-slate-500 dark:text-slate-400 text-xs">52,000+ institutions across 36 states</span>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-amber-50 border border-amber-100 flex items-center justify-center">
-                      <Award className="w-5 h-5 text-amber-600" />
+                    <div className="w-10 h-10 rounded-lg bg-amber-50 dark:bg-amber-950/60 border border-amber-100 dark:border-amber-900/60 flex items-center justify-center">
+                      <Award className="w-5 h-5 text-amber-600 dark:text-amber-400" />
                     </div>
                     <div>
-                      <span className="font-bold text-slate-900 block text-sm">NIRF Ranked Profiles</span>
-                      <span className="text-slate-500 text-xs">Official Govt rankings engine</span>
+                      <span className="font-bold text-slate-900 dark:text-slate-100 block text-sm">NIRF Ranked Profiles</span>
+                      <span className="text-slate-500 dark:text-slate-400 text-xs">Official Govt rankings engine</span>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center">
-                      <Search className="w-5 h-5 text-blue-600" />
+                    <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-950/60 border border-blue-100 dark:border-blue-900/60 flex items-center justify-center">
+                      <Search className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                     </div>
                     <div>
-                      <span className="font-bold text-slate-900 block text-sm">Fuzzy Live Search</span>
-                      <span className="text-slate-500 text-xs">Typo-tolerant across all entities</span>
+                      <span className="font-bold text-slate-900 dark:text-slate-100 block text-sm">Fuzzy Live Search</span>
+                      <span className="text-slate-500 dark:text-slate-400 text-xs">Typo-tolerant across all entities</span>
                     </div>
                   </div>
                 </motion.div>

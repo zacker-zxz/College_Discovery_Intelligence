@@ -13,10 +13,10 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const baseStyles = "inline-flex items-center justify-center font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-1 disabled:opacity-50 disabled:pointer-events-none rounded-md";
 
     const variants = {
-      primary: "bg-slate-900 text-white hover:bg-slate-700 active:bg-slate-950 shadow-sm",
-      secondary: "bg-slate-100 text-slate-900 hover:bg-slate-300 active:bg-slate-300 border border-slate-200",
-      outline: "bg-transparent text-slate-700 hover:bg-slate-200 hover:text-slate-900 border border-slate-300",
-      ghost: "bg-transparent text-slate-700 hover:bg-slate-200 hover:text-slate-900",
+      primary: "bg-slate-900 dark:bg-blue-600 text-white hover:bg-slate-700 dark:hover:bg-blue-500 active:bg-slate-950 shadow-sm",
+      secondary: "bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700",
+      outline: "bg-transparent text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-100 border border-slate-300 dark:border-slate-700",
+      ghost: "bg-transparent text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-100",
       danger: "bg-red-600 text-white hover:bg-red-700 active:bg-red-800 shadow-sm",
     };
 

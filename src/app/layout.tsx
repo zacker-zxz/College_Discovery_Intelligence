@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingChatBot } from "@/components/chat/FloatingChatBot";
+import { ThemeProvider } from "@/components/providers/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "CampusLens — Production College Discovery & Decision Intelligence",
@@ -22,12 +23,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="min-h-screen flex flex-col bg-white text-slate-900 font-sans antialiased relative selection:bg-blue-600 selection:text-white">
-        <Navbar />
-        <main className="flex-1 relative">{children}</main>
-        <Footer />
-        <FloatingChatBot />
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <body className="min-h-screen flex flex-col bg-[var(--background)] text-[var(--foreground)] font-sans antialiased relative selection:bg-blue-600 selection:text-white">
+        <ThemeProvider>
+          <Navbar />
+          <main className="flex-1 relative">{children}</main>
+          <Footer />
+          <FloatingChatBot />
+        </ThemeProvider>
       </body>
     </html>
   );

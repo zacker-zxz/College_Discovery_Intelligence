@@ -109,25 +109,25 @@ function CollegeDiscoveryContent() {
   return (
     <div className="app-frame py-8 space-y-6">
       {/* Header Banner */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-5">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-5">
         <div>
-          <div className="flex items-center gap-2 text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">
+          <div className="flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider mb-1">
             <Compass className="w-4 h-4" /> Discovery Directory
           </div>
-          <h1 className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
+          <h1 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">
             Higher Education Search Engine
           </h1>
         </div>
 
         {/* Sort Controls */}
         <div className="flex items-center gap-2 self-end md:self-auto">
-          <span className="text-xs text-slate-500 font-medium flex items-center gap-1">
-            <ArrowUpDown className="w-3.5 h-3.5 text-slate-400" /> Sort By:
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium flex items-center gap-1">
+            <ArrowUpDown className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500" /> Sort By:
           </span>
           <select
             value={filters.sort}
             onChange={(e) => handleFilterChange("sort", e.target.value)}
-            className="px-3 py-1.5 text-xs border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 bg-white font-medium"
+            className="px-3 py-1.5 text-xs border border-slate-200 dark:border-slate-700 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 font-medium"
           >
             <option value="relevance">NIRF Rank & Rating</option>
             <option value="rating">Highest Rating</option>
@@ -152,13 +152,13 @@ function CollegeDiscoveryContent() {
         {/* Search Results Area */}
         <div className="lg:col-span-3 space-y-6">
           {/* Results Summary Bar */}
-          <div className="flex items-center justify-between bg-white px-4 py-2.5 rounded-lg border border-slate-200 text-xs text-slate-600">
+          <div className="flex items-center justify-between bg-white dark:bg-slate-900 px-4 py-2.5 rounded-lg border border-slate-200 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-400">
             <span>
-              Showing <strong className="text-slate-900">{colleges.length}</strong> of{" "}
-              <strong className="text-slate-900">{pagination.total}</strong> colleges matching filters
+              Showing <strong className="text-slate-900 dark:text-slate-100">{colleges.length}</strong> of{" "}
+              <strong className="text-slate-900 dark:text-slate-100">{pagination.total}</strong> colleges matching filters
             </span>
             {selectedCompareIds.length > 0 && (
-              <span className="font-semibold text-blue-600">
+              <span className="font-semibold text-blue-600 dark:text-blue-400">
                 {selectedCompareIds.length} college(s) queued for comparison
               </span>
             )}
@@ -168,7 +168,7 @@ function CollegeDiscoveryContent() {
           {isLoading ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {[1, 2, 3, 4, 5, 6].map((n) => (
-                <div key={n} className="bg-white p-5 rounded-lg border border-slate-200 space-y-3">
+                <div key={n} className="bg-white dark:bg-slate-900 p-5 rounded-lg border border-slate-200 dark:border-slate-800 space-y-3">
                   <Skeleton className="h-4 w-3/4" />
                   <Skeleton className="h-3 w-1/2" />
                   <Skeleton className="h-16 w-full" />
@@ -177,10 +177,10 @@ function CollegeDiscoveryContent() {
               ))}
             </div>
           ) : colleges.length === 0 ? (
-            <div className="bg-white border border-slate-200 rounded-lg p-12 text-center space-y-4">
-              <Compass className="w-12 h-12 text-slate-300 mx-auto" />
-              <h3 className="text-base font-bold text-slate-800">No institutions match your search filters</h3>
-              <p className="text-slate-500 text-xs max-w-sm mx-auto">
+            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg p-12 text-center space-y-4">
+              <Compass className="w-12 h-12 text-slate-300 dark:text-slate-600 mx-auto" />
+              <h3 className="text-base font-bold text-slate-800 dark:text-slate-200">No institutions match your search filters</h3>
+              <p className="text-slate-500 dark:text-slate-400 text-xs max-w-sm mx-auto">
                 Try widening your fee range, removing state restrictions, or clearing active search keywords.
               </p>
               <Button variant="outline" size="sm" onClick={handleResetFilters}>
@@ -211,10 +211,10 @@ function CollegeDiscoveryContent() {
 
       {/* Floating Compare Action Tray */}
       {selectedCompareIds.length > 0 && (
-        <div className="fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-5 py-3.5 rounded-xl shadow-elevated border border-slate-700 flex items-center gap-4 animate-in fade-in slide-in-from-bottom-4">
+        <div className="fixed bottom-6 right-6 z-50 bg-slate-900 dark:bg-slate-950 text-white px-5 py-3.5 rounded-xl shadow-elevated border border-slate-700 dark:border-slate-800 flex items-center gap-4 animate-in fade-in slide-in-from-bottom-4">
           <div>
             <span className="font-bold text-sm block">Compare Colleges</span>
-            <span className="text-xs text-slate-300">{selectedCompareIds.length} of 3 selected</span>
+            <span className="text-xs text-slate-300 dark:text-slate-400">{selectedCompareIds.length} of 3 selected</span>
           </div>
           <Link href={`/compare?colleges=${selectedCompareIds.join(",")}`}>
             <Button variant="primary" size="sm" className="bg-blue-600 hover:bg-blue-700 text-white border-none">

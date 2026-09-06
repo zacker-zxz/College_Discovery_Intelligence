@@ -87,59 +87,59 @@ export default function SignupPage() {
         </div>
 
         {/* Right Side: Form */}
-        <div className="p-8 md:p-10 bg-white/90 flex flex-col justify-between space-y-6">
+        <div className="p-8 md:p-10 bg-white/90 dark:bg-slate-900/90 flex flex-col justify-between space-y-6">
           <div className="space-y-2">
-            <h1 className="text-2xl font-bold text-slate-900 tracking-tight">Create Account</h1>
-            <p className="text-slate-500 text-xs">Enter your details to register</p>
+            <h1 className="text-2xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">Create Account</h1>
+            <p className="text-slate-500 dark:text-slate-400 text-xs">Enter your details to register</p>
           </div>
 
           {error && (
-            <div className="bg-red-50 text-red-700 text-xs p-3.5 rounded-xl border border-red-200 font-medium">
+            <div className="bg-red-50 dark:bg-red-950/60 text-red-700 dark:text-red-300 text-xs p-3.5 rounded-xl border border-red-200 dark:border-red-800 font-medium">
               {error}
             </div>
           )}
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">Full Name</label>
+              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Full Name</label>
               <div className="relative">
-                <User className="w-4 h-4 absolute left-3 top-3 text-slate-400" />
+                <User className="w-4 h-4 absolute left-3 top-3 text-slate-400 dark:text-slate-500" />
                 <input
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Aarav Sharma"
-                  className="w-full pl-9 pr-3 py-2.5 text-xs border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-slate-400 bg-slate-50/50"
+                  className="w-full pl-9 pr-3 py-2.5 text-xs border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-slate-400 bg-slate-50/50 dark:bg-slate-800 text-slate-900 dark:text-slate-100"
                   required
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
+              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Email Address</label>
               <div className="relative">
-                <Mail className="w-4 h-4 absolute left-3 top-3 text-slate-400" />
+                <Mail className="w-4 h-4 absolute left-3 top-3 text-slate-400 dark:text-slate-500" />
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="aarav@example.com"
-                  className="w-full pl-9 pr-3 py-2.5 text-xs border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-slate-400 bg-slate-50/50"
+                  className="w-full pl-9 pr-3 py-2.5 text-xs border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-slate-400 bg-slate-50/50 dark:bg-slate-800 text-slate-900 dark:text-slate-100"
                   required
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">Password</label>
+              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Password</label>
               <div className="relative">
-                <Lock className="w-4 h-4 absolute left-3 top-3 text-slate-400" />
+                <Lock className="w-4 h-4 absolute left-3 top-3 text-slate-400 dark:text-slate-500" />
                 <input
                   type={showPassword ? "text" : "password"}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Min 8 chars, 1 letter & 1 number"
-                  className="w-full pl-9 pr-10 py-2.5 text-xs border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-slate-400 bg-slate-50/50"
+                  className="w-full pl-9 pr-10 py-2.5 text-xs border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-slate-400 bg-slate-50/50 dark:bg-slate-800 text-slate-900 dark:text-slate-100"
                   minLength={8}
                   pattern="(?=.*[A-Za-z])(?=.*\d).+"
                   title="Password must be at least 8 characters and contain a letter and a number"
@@ -148,7 +148,7 @@ export default function SignupPage() {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-3 text-slate-400 hover:text-slate-700"
+                  className="absolute right-3 top-3 text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
                 >
                   {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                 </button>
@@ -160,9 +160,9 @@ export default function SignupPage() {
             </Button>
           </form>
 
-          <div className="text-center pt-2 border-t border-slate-100 text-xs text-slate-500">
+          <div className="text-center pt-2 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400">
             Already have an account?{" "}
-            <Link href="/login" className="text-blue-600 font-semibold hover:underline">
+            <Link href="/login" className="text-blue-600 dark:text-blue-400 font-semibold hover:underline">
               Sign In
             </Link>
           </div>

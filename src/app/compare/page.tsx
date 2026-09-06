@@ -177,28 +177,28 @@ function CompareContent() {
   return (
     <div className="app-frame py-8 space-y-8">
       {/* Banner */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-5">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-5">
         <div>
-          <div className="flex items-center gap-2 text-xs font-semibold text-emerald-600 uppercase tracking-wider mb-1">
+          <div className="flex items-center gap-2 text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider mb-1">
             <GitCompare className="w-4 h-4" /> Decision Support Engine
           </div>
-          <h1 className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
+          <h1 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">
             Side-by-Side College Comparison Matrix
           </h1>
-          <p className="text-slate-500 text-xs mt-1">
+          <p className="text-slate-500 dark:text-slate-400 text-xs mt-1">
             Select 2 to 3 institutions to evaluate tuition fees, placement averages, and ratings side-by-side.
           </p>
         </div>
 
         {/* Save comparison form */}
         {selectedIds.length >= 2 && (
-          <div className="flex items-center gap-2 bg-white p-2 rounded-md border border-slate-200 shadow-xs">
+          <div className="flex items-center gap-2 bg-white dark:bg-slate-900 p-2 rounded-md border border-slate-200 dark:border-slate-800 shadow-xs">
             <input
               type="text"
               value={saveName}
               onChange={(e) => setSaveName(e.target.value)}
               placeholder="Comparison title (e.g. Top IITs CSE)"
-              className="px-2 py-1 text-xs border border-slate-200 rounded focus:outline-none bg-slate-50 w-44"
+              className="px-2 py-1 text-xs border border-slate-200 dark:border-slate-700 rounded focus:outline-none bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-slate-100 w-44"
             />
             <Button
               variant="outline"
@@ -209,17 +209,17 @@ function CompareContent() {
             >
               <Bookmark className="w-3.5 h-3.5 mr-1" /> Save
             </Button>
-            {saveSuccess && <span className="text-[11px] font-bold text-emerald-600">Saved!</span>}
+            {saveSuccess && <span className="text-[11px] font-bold text-emerald-600 dark:text-emerald-400">Saved!</span>}
           </div>
         )}
       </div>
 
       {/* College Selector Bar */}
-      <Card className="bg-white border-slate-200 space-y-4">
-        <h3 className="font-bold text-slate-900 text-sm flex items-center justify-between">
+      <Card className="bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 space-y-4">
+        <h3 className="font-bold text-slate-900 dark:text-slate-100 text-sm flex items-center justify-between">
           <span>Selected Colleges ({selectedIds.length} of 3)</span>
           {selectedIds.length < 2 && (
-            <span className="text-xs text-amber-700 font-normal flex items-center gap-1">
+            <span className="text-xs text-amber-700 dark:text-amber-400 font-normal flex items-center gap-1">
               <AlertCircle className="w-3.5 h-3.5" /> Add at least 2 colleges to compare
             </span>
           )}
@@ -237,12 +237,12 @@ function CompareContent() {
           {selectedColleges.map((col) => (
             <div
               key={col.id}
-              className="flex items-center gap-2 bg-slate-100 border border-slate-300 px-3 py-1.5 rounded-md text-xs font-semibold text-slate-900"
+              className="flex items-center gap-2 bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 px-3 py-1.5 rounded-md text-xs font-semibold text-slate-900 dark:text-slate-100"
             >
               <span>{col.name}</span>
               <button
                 onClick={() => handleRemoveCollege(col.id)}
-                className="text-slate-400 hover:text-red-600 font-bold ml-1"
+                className="text-slate-400 hover:text-red-600 dark:hover:text-red-400 font-bold ml-1"
               >
                 ×
               </button>
@@ -252,31 +252,31 @@ function CompareContent() {
           {selectedIds.length < 3 && (
             <div className="relative flex-1 min-w-[240px]">
               <div className="relative">
-                <Search className="w-4 h-4 absolute left-3 top-2.5 text-slate-400" />
+                <Search className="w-4 h-4 absolute left-3 top-2.5 text-slate-400 dark:text-slate-500" />
                 <input
                   type="text"
                   value={searchQuery}
                   onChange={(e) => handleSearchColleges(e.target.value)}
                   placeholder="Type college name to add (e.g. BITS Pilani, NIT Trichy)..."
-                  className="w-full pl-9 pr-3 py-2 text-xs border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 bg-slate-50"
+                  className="w-full pl-9 pr-3 py-2 text-xs border border-slate-200 dark:border-slate-700 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-slate-100"
                 />
               </div>
 
               {/* Dropdown search results */}
               {searchResults.length > 0 && (
-                <div className="absolute top-full left-0 right-0 z-30 bg-white border border-slate-200 rounded-md shadow-elevated mt-1 overflow-hidden divide-y divide-slate-100">
+                <div className="absolute top-full left-0 right-0 z-30 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-md shadow-elevated mt-1 overflow-hidden divide-y divide-slate-100 dark:divide-slate-800">
                   {searchResults.map((item) => (
                     <button
                       key={item.id}
                       onClick={() => handleAddCollege(item.id)}
                       disabled={selectedIds.includes(item.id)}
-                      className="w-full text-left px-3 py-2 text-xs hover:bg-slate-50 flex items-center justify-between disabled:opacity-40"
+                      className="w-full text-left px-3 py-2 text-xs hover:bg-slate-50 dark:hover:bg-slate-800/60 flex items-center justify-between disabled:opacity-40"
                     >
                       <div>
-                        <span className="font-bold text-slate-900 block">{item.name}</span>
-                        <span className="text-[11px] text-slate-500">{item.city}, {item.state} • {item.institutionType}</span>
+                        <span className="font-bold text-slate-900 dark:text-slate-100 block">{item.name}</span>
+                        <span className="text-[11px] text-slate-500 dark:text-slate-400">{item.city}, {item.state} • {item.institutionType}</span>
                       </div>
-                      <Plus className="w-4 h-4 text-blue-600" />
+                      <Plus className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                     </button>
                   ))}
                 </div>
@@ -293,7 +293,7 @@ function CompareContent() {
           <Skeleton className="h-64 w-full" />
         </div>
       ) : error ? (
-        <div className="bg-red-50 text-red-700 p-4 rounded-md border border-red-200 text-xs font-medium">
+        <div className="bg-red-50 dark:bg-red-950/40 text-red-700 dark:text-red-300 p-4 rounded-md border border-red-200 dark:border-red-800 text-xs font-medium">
           {error}
         </div>
       ) : comparisonMatrix.length >= 2 ? (
@@ -302,11 +302,11 @@ function CompareContent() {
           onRemoveCollege={handleRemoveCollege}
         />
       ) : (
-        <div className="bg-white border border-slate-200 rounded-lg p-12 text-center space-y-3">
-          <GitCompare className="w-12 h-12 text-slate-300 mx-auto" />
-          <h3 className="text-base font-bold text-slate-800">Select Colleges to Compare</h3>
-          <p className="text-xs text-slate-500 max-w-sm mx-auto">
-            Use the search box above or browse the <Link href="/colleges" className="text-blue-600 underline">Colleges Directory</Link> to queue institutions into your decision matrix.
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg p-12 text-center space-y-3">
+          <GitCompare className="w-12 h-12 text-slate-300 dark:text-slate-600 mx-auto" />
+          <h3 className="text-base font-bold text-slate-800 dark:text-slate-200">Select Colleges to Compare</h3>
+          <p className="text-xs text-slate-500 dark:text-slate-400 max-w-sm mx-auto">
+            Use the search box above or browse the <Link href="/colleges" className="text-blue-600 dark:text-blue-400 underline">Colleges Directory</Link> to queue institutions into your decision matrix.
           </p>
         </div>
       )}
