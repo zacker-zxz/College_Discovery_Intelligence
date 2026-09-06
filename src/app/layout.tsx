@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { FloatingChatBot } from "@/components/chat/FloatingChatBot";
 
 export const metadata: Metadata = {
   title: "CampusLens — Production College Discovery & Decision Intelligence",
@@ -26,7 +27,9 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1 relative">{children}</main>
         <Footer />
+        <FloatingChatBot />
       </body>
     </html>
   );
 }
+
